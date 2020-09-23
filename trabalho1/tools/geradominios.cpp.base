@@ -1,0 +1,23 @@
+
+/**
+ * Implementação de construtor da classe $dominio$
+ */
+$dominio$::$dominio$($tipoValor$ valor) {
+	$dominio$::validate(valor);
+	this->valor = valor;
+}
+
+/**
+ * TODO: Explicar como funciona a validação da classe
+ */
+$dominio$::validate($tipoValor$ valor) throw invalid_argument {
+	// TODO: Implementar função de validação
+}
+
+/**
+ * Implementação de método setter da classe $dominio$
+ */
+void $dominio$::setValor($tipoValor$ valor) {
+	$dominio$::validate(valor);
+	this->valor = valor;
+}
