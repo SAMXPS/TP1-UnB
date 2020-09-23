@@ -13,7 +13,7 @@ class $dominio$ {
 		 * Método estático que faz a validação do valor.
 		 * Para mais informações, vide documentação de implementação do mesmo.
 		 */
-        static void validate($tipoValor$ valor) throw invalid_argument;
+		static void validate($tipoValor$ valor) throw invalid_argument;
 		
     public:
 		/**
