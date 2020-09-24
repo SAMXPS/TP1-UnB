@@ -69,6 +69,18 @@
 		<Unit filename="Dominios/ValorDeAplicacao.h" />
 		<Unit filename="Dominios/ValorMinimo.cpp" />
 		<Unit filename="Dominios/ValorMinimo.h" />
+		<Unit filename="Tests/ResultadoTU.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Tests/TU.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Tests/TU.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Tests/TUCEP.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="dominios.cpp" />
 		<Unit filename="dominios.h" />
 		<Unit filename="main.cpp" />
