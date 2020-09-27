@@ -1,3 +1,4 @@
+#include "CEP.h"
 
 /**
  * Implementação de construtor da classe CEP.
@@ -19,7 +20,7 @@ CEP::CEP(long valor) {
  *
  * Caso valor informado esteja fora dessa região, exceção será lançada.
  */
-void CEP::validate(long valor) throw invalid_argument {
+void CEP::validate(long valor) throw(invalid_argument) {
     if (   (valor < 1000000  || valor > 70999999)   // valores extremos inválidos
         || (valor > 5999999  && valor < 8000000 )   // inválidos entre faixa 1 e SP
         || (valor > 8499999  && valor < 20000000)   // inválidos entre SP e RJ

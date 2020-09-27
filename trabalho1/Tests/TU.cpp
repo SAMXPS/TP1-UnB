@@ -1,6 +1,7 @@
 #include "TU.h"
 
-bool TU::configurar() {
+template<class Dominio, class ValorDominio>
+bool TU<Dominio, ValorDominio>::configurar() {
     try {
         this->instancia = new Dominio(this->getValorDefault());
         return ResultadoTU::PASSOU;
@@ -9,11 +10,13 @@ bool TU::configurar() {
     }
 }
 
-void TU::terminar() {
+template<class Dominio, class ValorDominio>
+void TU<Dominio, ValorDominio>::terminar() {
     delete instancia;
 }
 
-bool TU::testarCenarioSucesso() {
+template<class Dominio, class ValorDominio>
+bool TU<Dominio, ValorDominio>::testarCenarioSucesso() {
     try {
         // Tenta-se definir o valor válido na instância.
         this->instancia->setValor(this->getValorCasoSucesso());
@@ -29,7 +32,8 @@ bool TU::testarCenarioSucesso() {
     return ResultadoTU::FALHOU;
 }
 
-bool TU::testarCenarioFalha() {
+template<class Dominio, class ValorDominio>
+bool TU<Dominio, ValorDominio>::testarCenarioFalha() {
     ValorDominio valorInicial = this->instancia->getValor();
 
     try {
@@ -44,4 +48,13 @@ bool TU::testarCenarioFalha() {
         // Se o valor foi modificado, considera-se falha na implementação de classe de domínio.
     }
     return ResultadoTU::FALHOU;
+}
+
+template<class Dominio, class ValorDominio>
+ResultadoTU TU<Dominio, ValorDominio>::testar() {
+    ResultadoTU resultado;
+    resultado.criacaoDeObjeto = this->configurar();
+    resultado.cenarioFalha = this->testarCenarioFalha();
+    resultado.cenarioSucesso = this->testarCenarioSucesso();
+    this->terminar();
 }

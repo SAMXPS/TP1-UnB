@@ -6,17 +6,18 @@
 
 class TUCEP : public TU<CEP, long> {
     protected:
+    
         long getValorCasoFalha() {
-            return "71000000";
+            return 71000000;
         };
 
         long getValorCasoSucesso() {
-            return "70999998";
+            return 70999998;
         }
 
         long getValorDefault() {
-            return "20000001";
+            return 20000001;
         }
-}
+};
 
 #endif // TUCEP_H_INCLUDED

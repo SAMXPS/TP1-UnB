@@ -6,7 +6,7 @@
 /**
  * Classe abstrata criada com intuito de facilitar a criação de testes unitários de domínios.
  */
-Template<class Dominio, class ValorDominio>
+template<class Dominio, class ValorDominio>
 class TU {
     private:
         Dominio* instancia;
@@ -62,8 +62,7 @@ class TU {
          *
          * @return ResultadoTU com os resultados do teste.
          */
-        ResultadoTU testar();
-}
-
+        virtual ResultadoTU testar();
+};
 
 #endif //TU_H_INCLUDED

@@ -1,5 +1,6 @@
 #ifndef RESULTADOTU_H_INCLUDED
 #define RESULTADOTU_H_INCLUDED
+#include <iostream>
 
 /**
  * Classe que representa um Resultado de Teste Unitário.
@@ -14,12 +15,18 @@
  */
 class ResultadoTU {
     public:
-        static bool FALHOU = false;
-        static bool PASSOU = true;
+        const static bool FALHOU = false;
+        const static bool PASSOU = true;
 
         bool criacaoDeObjeto = FALHOU;
         bool cenarioSucesso  = FALHOU;
         bool cenarioFalha    = FALHOU;
-}
+
+        void mostrar() {
+            std::cout << "CRIACAO: " << criacaoDeObjeto << std::endl;
+            std::cout << "SUCESSO: " << criacaoDeObjeto << std::endl;
+            std::cout << "FALHA: " << criacaoDeObjeto << std::endl;
+        };
+};
 
 #endif // RESULTADOTU_H_INCLUDED
