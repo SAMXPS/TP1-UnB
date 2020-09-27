@@ -12,6 +12,9 @@ ValorMinimo::ValorMinimo(string valor) {
  */
 ValorMinimo::validate(string valor) throw invalid_argument {
 	// TODO: Implementar função de validação
+	if(!((valor - '0') == 1000 || (valor - '0') == 5000 || (valor - '0') == 10000 || (valor - '0') == 50000)){
+        throw new invalid_argument("O valor minimo nao eh aceitavel")
+	}
 }
 
 /**
