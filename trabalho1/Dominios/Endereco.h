@@ -11,11 +11,11 @@ class Endereco {
 
     private:
 		std::string valor;
-		static const int maximo 20;
-		static const int minimo 5;
+		static const int maximo = 20;
+		static const int minimo = 5;
+
 		/**
-		 * Método estático que faz a validação do valor.
-		 * Para mais informações, vide documentação de implementação do mesmo.
+		 * TODO: Explicar como funciona a validação da classe
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 
@@ -47,4 +47,4 @@ inline const std::string Endereco::getValor() {
 	return valor;
 }
 
-#endif ENDERECO_H_INCLUDED
+#endif // ENDERECO_H_INCLUDED
