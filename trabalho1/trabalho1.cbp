@@ -41,8 +41,8 @@
 		<Unit filename="Dominios/Classe.h" />
 		<Unit filename="Dominios/CodigoDeAgencia.cpp" />
 		<Unit filename="Dominios/CodigoDeAgencia.h" />
-		<Unit filename="Dominios/CodigoDeAplicacao .cpp" />
-		<Unit filename="Dominios/CodigoDeAplicacao .h" />
+		<Unit filename="Dominios/CodigoDeAplicacao.cpp" />
+		<Unit filename="Dominios/CodigoDeAplicacao.h" />
 		<Unit filename="Dominios/CodigoDeBanco.cpp" />
 		<Unit filename="Dominios/CodigoDeBanco.h" />
 		<Unit filename="Dominios/CodigoDeProduto.cpp" />
@@ -69,18 +69,43 @@
 		<Unit filename="Dominios/ValorDeAplicacao.h" />
 		<Unit filename="Dominios/ValorMinimo.cpp" />
 		<Unit filename="Dominios/ValorMinimo.h" />
-		<Unit filename="Tests/ResultadoTU.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="Tests/TU.cpp">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="Tests/TU.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="Tests/TUCEP.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="Tests/ResultadoTU.h" />
+		<Unit filename="Tests/TUCEP.cpp" />
+		<Unit filename="Tests/TUCEP.h" />
+		<Unit filename="Tests/TUCPF.cpp" />
+		<Unit filename="Tests/TUCPF.h" />
+		<Unit filename="Tests/TUClasse.cpp" />
+		<Unit filename="Tests/TUClasse.h" />
+		<Unit filename="Tests/TUCodigoDeAgencia.cpp" />
+		<Unit filename="Tests/TUCodigoDeAgencia.h" />
+		<Unit filename="Tests/TUCodigoDeAplicacao.cpp" />
+		<Unit filename="Tests/TUCodigoDeAplicacao.h" />
+		<Unit filename="Tests/TUCodigoDeBanco.cpp" />
+		<Unit filename="Tests/TUCodigoDeBanco.h" />
+		<Unit filename="Tests/TUCodigoDeProduto.cpp" />
+		<Unit filename="Tests/TUCodigoDeProduto.h" />
+		<Unit filename="Tests/TUData.cpp" />
+		<Unit filename="Tests/TUData.h" />
+		<Unit filename="Tests/TUEmissor.cpp" />
+		<Unit filename="Tests/TUEmissor.h" />
+		<Unit filename="Tests/TUEndereco.cpp" />
+		<Unit filename="Tests/TUEndereco.h" />
+		<Unit filename="Tests/TUHorario.cpp" />
+		<Unit filename="Tests/TUHorario.h" />
+		<Unit filename="Tests/TUNome.cpp" />
+		<Unit filename="Tests/TUNome.h" />
+		<Unit filename="Tests/TUNumero.cpp" />
+		<Unit filename="Tests/TUNumero.h" />
+		<Unit filename="Tests/TUPrazo.cpp" />
+		<Unit filename="Tests/TUPrazo.h" />
+		<Unit filename="Tests/TUSenha.cpp" />
+		<Unit filename="Tests/TUSenha.h" />
+		<Unit filename="Tests/TUTaxa.cpp" />
+		<Unit filename="Tests/TUTaxa.h" />
+		<Unit filename="Tests/TUValorDeAplicacao.cpp" />
+		<Unit filename="Tests/TUValorDeAplicacao.h" />
+		<Unit filename="Tests/TUValorMinimo.cpp" />
+		<Unit filename="Tests/TUValorMinimo.h" />
 		<Unit filename="dominios.cpp" />
 		<Unit filename="dominios.h" />
 		<Unit filename="main.cpp" />
