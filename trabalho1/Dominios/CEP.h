@@ -21,14 +21,14 @@ class CEP {
 		long valor;
 
 		/**
-		 * Método estático que faz a validação do valor.
-		 * Para mais informações, vide documentação de implementação do mesmo.
+		 * O valor do CEP pode estar contido nas faixas descritas na documentação desta classe.
+		 * Caso valor informado esteja fora dessas faixas, exceção será lançada.
 		 */
         static void validate(long valor) throw(std::invalid_argument);
 
     public:
 		/**
-		 * Método construtor da classe CEP
+		 * Método construtor da classe CEP.
 		 */
 		CEP(long valor);
 
@@ -47,9 +47,7 @@ class CEP {
 		const long getValor();
 };
 
-/**
- * Implementação de método getter inline.
- */
+// Implementação de método getter inline.
 inline const long CEP::getValor() {
 	return valor;
 };
