@@ -1,6 +1,8 @@
 #include "CodigoDeProduto.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 CodigoDeProduto::CodigoDeProduto(string valor) {
 	CodigoDeProduto::validate(valor);
 	this->valor = valor;

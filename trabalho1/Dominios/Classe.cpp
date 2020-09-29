@@ -1,6 +1,8 @@
 #include "Classe.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 Classe::Classe(string valor) {
 	Classe::validate(valor);
 	this->valor = valor;

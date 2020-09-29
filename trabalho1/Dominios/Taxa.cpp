@@ -1,6 +1,8 @@
 #include "Taxa.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 Taxa::Taxa(string valor) {
 	Taxa::validate(valor);
 	this->valor = valor;

@@ -1,6 +1,8 @@
 #include "ValorDeAplicacao.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 ValorDeAplicacao::ValorDeAplicacao(string valor) {
 	ValorDeAplicacao::validate(valor);
 	this->valor = valor;

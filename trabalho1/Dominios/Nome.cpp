@@ -1,6 +1,8 @@
 #include "Nome.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 Nome::Nome(string valor) {
 	Nome::validate(valor);
 	this->valor = valor;

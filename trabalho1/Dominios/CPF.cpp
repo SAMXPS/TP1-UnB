@@ -9,14 +9,14 @@ CPF::CPF(string valor) {
 void CPF::validate(string valor) throw(invalid_argument) {
 	// TODO: Implementar função de validação
 	if(valor.size() != tamanho){
-        throw new invalid_argument("O CPF nao tem o tamanho padrao");
+        throw invalid_argument("O CPF nao tem o tamanho padrao");
 	}
 	 for(int i=0; i<valor.size(); i++)
     {
         if(!isdigit(valor[i]))//confere se é um numero inteiro
         {
             if(!((i == 3 && valor[i] != '.') || (i == 7 && valor[i] != '.') || (i == 11 && valor[i] != '-'))){ //confere se eh um ponto ou um traco no CPF
-                throw new invalid_argument("O CPF foi escrito de forma incorreta.");
+                throw invalid_argument("O CPF foi escrito de forma incorreta.");
                 break;
             }
         }
@@ -47,7 +47,7 @@ void CPF::validate(string valor) throw(invalid_argument) {
     }
 
     if((valor[12] - '0') != digito11){
-        throw new invalid_argument("O CPF eh invalido");
+        throw invalid_argument("O CPF eh invalido");
     }
     somaCpf = 0;
     multiplicador = 11;//Para o calculo do segundo digito, o multiplicador é 11
@@ -64,7 +64,7 @@ void CPF::validate(string valor) throw(invalid_argument) {
         digito12 = 0;
     }
     if((valor[13] - '0') != digito12) {
-        throw new invalid_argument("O CPF eh invalido");
+        throw invalid_argument("O CPF eh invalido");
     }
 }
 

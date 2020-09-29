@@ -1,6 +1,8 @@
 #include "Prazo.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 Prazo::Prazo(string valor) {
 	Prazo::validate(valor);
 	this->valor = valor;
