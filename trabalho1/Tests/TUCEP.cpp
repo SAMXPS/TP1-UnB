@@ -1,4 +1,6 @@
 #include "TUCEP.h"
+using namespace std;
+#include <iostream>
 
 bool TUCEP::configurar() {
     try {
@@ -31,7 +33,6 @@ bool TUCEP::testarCenarioSucesso() {
 
 bool TUCEP::testarCenarioFalha() {
     long valorInicial = this->instancia->getValor();
-
     try {
         // Tenta-se definir o valor inválido na instância.
         this->instancia->setValor(this->getValorCasoFalha());
@@ -48,8 +49,12 @@ bool TUCEP::testarCenarioFalha() {
 
 ResultadoTU TUCEP::testar() {
     ResultadoTU resultado;
+
     resultado.criacaoDeObjeto = this->configurar();
     resultado.cenarioFalha = this->testarCenarioFalha();
     resultado.cenarioSucesso = this->testarCenarioSucesso();
+
     this->terminar();
+
+    return resultado;
 }

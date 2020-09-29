@@ -1,20 +1,20 @@
-#include "TU$dominio$.h"
+#include "TUSenha.h"
 using namespace std;
 
-bool TU$dominio$::configurar() {
+bool TUSenha::configurar() {
     try {
-        this->instancia = new $dominio$(this->getValorDefault());
+        this->instancia = new Senha(this->getValorDefault());
         return ResultadoTU::PASSOU;
     } catch (...) {
         return ResultadoTU::FALHOU;
     }
 }
 
-void TU$dominio$::terminar() {
+void TUSenha::terminar() {
     delete instancia;
 }
 
-bool TU$dominio$::testarCenarioSucesso() {
+bool TUSenha::testarCenarioSucesso() {
     try {
         // Tenta-se definir o valor válido na instância.
         this->instancia->setValor(this->getValorCasoSucesso());
@@ -30,8 +30,8 @@ bool TU$dominio$::testarCenarioSucesso() {
     return ResultadoTU::FALHOU;
 }
 
-bool TU$dominio$::testarCenarioFalha() {
-    $tipoValor$ valorInicial = this->instancia->getValor();
+bool TUSenha::testarCenarioFalha() {
+    string valorInicial = this->instancia->getValor();
 
     try {
         // Tenta-se definir o valor inválido na instância.
@@ -47,7 +47,7 @@ bool TU$dominio$::testarCenarioFalha() {
     return ResultadoTU::FALHOU;
 }
 
-ResultadoTU TU$dominio$::testar() {
+ResultadoTU TUSenha::testar() {
     ResultadoTU resultado;
 
     resultado.criacaoDeObjeto = this->configurar();

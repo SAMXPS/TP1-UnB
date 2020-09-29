@@ -23,18 +23,15 @@ class TUCEP {
 };
 
 inline long TUCEP::getValorDefault() {
-    // TODO: Preencher valor
-    return 20000001;
+    return 20000001L;
 };
 
 inline long TUCEP::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 70999998;
+    return 70999998L;
 };
 
 inline long TUCEP::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 71000000;
+    return 71000000L;
 };
 
 #endif // TUCEP_H_INCLUDED
