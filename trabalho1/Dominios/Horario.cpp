@@ -1,21 +1,16 @@
+#include "Horario.h"
+using namespace std;
 
-/**
- * Implementação de construtor da classe Horario
- */
 Horario::Horario(string valor) {
 	Horario::validate(valor);
 	this->valor = valor;
 }
 
-/**
- * TODO: Explicar como funciona a validação da classe
- */
-Horario::validate(string valor) throw invalid_argument {
-	// TODO: Implementar função de validação
+void Horario::validate(string valor) throw(invalid_argument) {
 	if(valor.size() != tamanho){
         throw new invalid_argument("O horario nao tem o tamanho padrao");
 	}
-	if(valor[2] != ":"){
+	if(valor[2] != ':'){
         throw new invalid_argument("O horario nao esta no formato correto");
 	}
 	if((valor[1]- '0') < minimo){
@@ -29,9 +24,6 @@ Horario::validate(string valor) throw invalid_argument {
 	}
 }
 
-/**
- * Implementação de método setter da classe Horario
- */
 void Horario::setValor(string valor) {
 	Horario::validate(valor);
 	this->valor = valor;

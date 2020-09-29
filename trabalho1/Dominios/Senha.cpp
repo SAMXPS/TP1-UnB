@@ -1,17 +1,12 @@
+#include "Senha.h"
+using namespace std;
 
-/**
- * Implementação de construtor da classe Senha
- */
 Senha::Senha(string valor) {
 	Senha::validate(valor);
 	this->valor = valor;
 }
 
-/**
- * TODO: Explicar como funciona a validação da classe
- */
-Senha::validate(string valor) throw invalid_argument {
-	// TODO: Implementar função de validação
+void Senha::validate(string valor) throw (invalid_argument){
 	if(valor.size() != tamanho){
         throw new invalid_argument("O senha nao tem o tamanho padrao");
 	}
@@ -24,9 +19,6 @@ Senha::validate(string valor) throw invalid_argument {
 	}
 }
 
-/**
- * Implementação de método setter da classe Senha
- */
 void Senha::setValor(string valor) {
 	Senha::validate(valor);
 	this->valor = valor;

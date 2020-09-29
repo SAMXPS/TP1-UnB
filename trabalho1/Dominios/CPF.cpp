@@ -1,16 +1,12 @@
-#include <string>
-/**
- * Implementação de construtor da classe CPF
- */
+#include "CPF.h"
+using namespace std;
+
 CPF::CPF(string valor) {
 	CPF::validate(valor);
 	this->valor = valor;
 }
 
-/**
- * TODO: Explicar como funciona a validação da classe
- */
-CPF::validate(string valor) throw invalid_argument {
+void CPF::validate(string valor) throw(invalid_argument) {
 	// TODO: Implementar função de validação
 	if(valor.size() != tamanho){
         throw new invalid_argument("O CPF nao tem o tamanho padrao");

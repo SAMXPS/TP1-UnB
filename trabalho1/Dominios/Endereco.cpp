@@ -1,15 +1,12 @@
 #include "Endereco.h"
+using namespace std;
 
-/**
- * Implementação de construtor da classe Endereco
- */
 Endereco::Endereco(std::string valor) {
 	Endereco::validate(valor);
 	this->valor = valor;
 }
 
 void Endereco::validate(std::string valor) throw (std::invalid_argument) {
-	// TODO: Implementar função de validação
 	int tamanho = valor.size();
 
 	if(tamanho < minimo || tamanho > maximo){
@@ -27,9 +24,6 @@ void Endereco::validate(std::string valor) throw (std::invalid_argument) {
 	}
 }
 
-/**
- * Implementação de método setter da classe Endereco
- */
 void Endereco::setValor(std::string valor) {
 	Endereco::validate(valor);
 	this->valor = valor;

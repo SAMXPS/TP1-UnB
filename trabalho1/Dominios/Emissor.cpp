@@ -1,19 +1,14 @@
-#include <string>
+#include "Emissor.h"
 #include <cctype>
-/**
- * Implementação de construtor da classe Emissor
- */
+using namespace std;
+
 Emissor::Emissor(string valor) {
 	Emissor::validate(valor);
 	this->valor = valor;
 }
 
-/**
- * TODO: Explicar como funciona a validação da classe
- */
-Emissor::validate(string valor) throw invalid_argument {
-	// TODO: Implementar função de validação
-	tamanho = valor.size();
+void Emissor::validate(string valor) throw(invalid_argument) {
+	int tamanho = valor.size();
 	if(tamanho < minimo || tamanho > maximo){
         throw new invalid_argument("O emissor nao tem o tamanho padrao");
 	}
@@ -28,9 +23,7 @@ Emissor::validate(string valor) throw invalid_argument {
         }
 	}
 }
-/**
- * Implementação de método setter da classe Emissor
- */
+
 void Emissor::setValor(string valor) {
 	Emissor::validate(valor);
 	this->valor = valor;
