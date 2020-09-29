@@ -1,5 +1,5 @@
-#ifndef NUMERO_H_INCLUDED
-#define NUMERO_H_INCLUDED
+#ifndef TUNUMERO_H_INCLUDED
+#define TUNUMERO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Numero.h" 
@@ -37,4 +37,4 @@ inline string TUNumero::getValorCasoFalha() {
     return 0;
 };
 
-#endif // NUMERO_H_INCLUDED
+#endif // TUNUMERO_H_INCLUDED

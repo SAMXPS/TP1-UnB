@@ -1,5 +1,5 @@
-#ifndef CODIGODEAGENCIA_H_INCLUDED
-#define CODIGODEAGENCIA_H_INCLUDED
+#ifndef TUCODIGODEAGENCIA_H_INCLUDED
+#define TUCODIGODEAGENCIA_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeAgencia.h" 
@@ -37,4 +37,4 @@ inline string TUCodigoDeAgencia::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CODIGODEAGENCIA_H_INCLUDED
+#endif // TUCODIGODEAGENCIA_H_INCLUDED

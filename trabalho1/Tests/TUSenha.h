@@ -1,5 +1,5 @@
-#ifndef SENHA_H_INCLUDED
-#define SENHA_H_INCLUDED
+#ifndef TUSENHA_H_INCLUDED
+#define TUSENHA_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Senha.h" 
@@ -37,4 +37,4 @@ inline string TUSenha::getValorCasoFalha() {
     return 0;
 };
 
-#endif // SENHA_H_INCLUDED
+#endif // TUSENHA_H_INCLUDED

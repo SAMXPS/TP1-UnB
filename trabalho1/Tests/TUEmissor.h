@@ -1,5 +1,5 @@
-#ifndef EMISSOR_H_INCLUDED
-#define EMISSOR_H_INCLUDED
+#ifndef TUEMISSOR_H_INCLUDED
+#define TUEMISSOR_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Emissor.h" 
@@ -37,4 +37,4 @@ inline string TUEmissor::getValorCasoFalha() {
     return 0;
 };
 
-#endif // EMISSOR_H_INCLUDED
+#endif // TUEMISSOR_H_INCLUDED

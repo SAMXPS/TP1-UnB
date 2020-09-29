@@ -1,5 +1,5 @@
-#ifndef NOME_H_INCLUDED
-#define NOME_H_INCLUDED
+#ifndef TUNOME_H_INCLUDED
+#define TUNOME_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Nome.h" 
@@ -37,4 +37,4 @@ inline string TUNome::getValorCasoFalha() {
     return 0;
 };
 
-#endif // NOME_H_INCLUDED
+#endif // TUNOME_H_INCLUDED

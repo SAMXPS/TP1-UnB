@@ -1,5 +1,5 @@
-#ifndef CLASSE_H_INCLUDED
-#define CLASSE_H_INCLUDED
+#ifndef TUCLASSE_H_INCLUDED
+#define TUCLASSE_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Classe.h" 
@@ -37,4 +37,4 @@ inline string TUClasse::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CLASSE_H_INCLUDED
+#endif // TUCLASSE_H_INCLUDED

@@ -1,5 +1,5 @@
-#ifndef ENDERECO_H_INCLUDED
-#define ENDERECO_H_INCLUDED
+#ifndef TUENDERECO_H_INCLUDED
+#define TUENDERECO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Endereco.h" 
@@ -37,4 +37,4 @@ inline string TUEndereco::getValorCasoFalha() {
     return 0;
 };
 
-#endif // ENDERECO_H_INCLUDED
+#endif // TUENDERECO_H_INCLUDED

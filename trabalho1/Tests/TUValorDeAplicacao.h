@@ -1,5 +1,5 @@
-#ifndef VALORDEAPLICACAO_H_INCLUDED
-#define VALORDEAPLICACAO_H_INCLUDED
+#ifndef TUVALORDEAPLICACAO_H_INCLUDED
+#define TUVALORDEAPLICACAO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/ValorDeAplicacao.h" 
@@ -37,4 +37,4 @@ inline string TUValorDeAplicacao::getValorCasoFalha() {
     return 0;
 };
 
-#endif // VALORDEAPLICACAO_H_INCLUDED
+#endif // TUVALORDEAPLICACAO_H_INCLUDED

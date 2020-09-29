@@ -1,5 +1,5 @@
-#ifndef CODIGODEBANCO_H_INCLUDED
-#define CODIGODEBANCO_H_INCLUDED
+#ifndef TUCODIGODEBANCO_H_INCLUDED
+#define TUCODIGODEBANCO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeBanco.h" 
@@ -37,4 +37,4 @@ inline string TUCodigoDeBanco::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CODIGODEBANCO_H_INCLUDED
+#endif // TUCODIGODEBANCO_H_INCLUDED

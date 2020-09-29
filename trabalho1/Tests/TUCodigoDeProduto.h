@@ -1,5 +1,5 @@
-#ifndef CODIGODEPRODUTO_H_INCLUDED
-#define CODIGODEPRODUTO_H_INCLUDED
+#ifndef TUCODIGODEPRODUTO_H_INCLUDED
+#define TUCODIGODEPRODUTO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeProduto.h" 
@@ -37,4 +37,4 @@ inline string TUCodigoDeProduto::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CODIGODEPRODUTO_H_INCLUDED
+#endif // TUCODIGODEPRODUTO_H_INCLUDED

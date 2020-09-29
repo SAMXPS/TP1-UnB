@@ -1,5 +1,5 @@
-#ifndef PRAZO_H_INCLUDED
-#define PRAZO_H_INCLUDED
+#ifndef TUPRAZO_H_INCLUDED
+#define TUPRAZO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Prazo.h" 
@@ -37,4 +37,4 @@ inline string TUPrazo::getValorCasoFalha() {
     return 0;
 };
 
-#endif // PRAZO_H_INCLUDED
+#endif // TUPRAZO_H_INCLUDED

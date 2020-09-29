@@ -1,5 +1,5 @@
-#ifndef HORARIO_H_INCLUDED
-#define HORARIO_H_INCLUDED
+#ifndef TUHORARIO_H_INCLUDED
+#define TUHORARIO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Horario.h" 
@@ -37,4 +37,4 @@ inline string TUHorario::getValorCasoFalha() {
     return 0;
 };
 
-#endif // HORARIO_H_INCLUDED
+#endif // TUHORARIO_H_INCLUDED

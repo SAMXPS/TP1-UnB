@@ -1,5 +1,5 @@
-#ifndef CODIGODEAPLICACAO_H_INCLUDED
-#define CODIGODEAPLICACAO_H_INCLUDED
+#ifndef TUCODIGODEAPLICACAO_H_INCLUDED
+#define TUCODIGODEAPLICACAO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeAplicacao.h" 
@@ -37,4 +37,4 @@ inline string TUCodigoDeAplicacao::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CODIGODEAPLICACAO_H_INCLUDED
+#endif // TUCODIGODEAPLICACAO_H_INCLUDED

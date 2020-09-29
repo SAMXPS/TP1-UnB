@@ -1,5 +1,5 @@
-#ifndef CPF_H_INCLUDED
-#define CPF_H_INCLUDED
+#ifndef TUCPF_H_INCLUDED
+#define TUCPF_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/CPF.h" 
@@ -37,4 +37,4 @@ inline string TUCPF::getValorCasoFalha() {
     return 0;
 };
 
-#endif // CPF_H_INCLUDED
+#endif // TUCPF_H_INCLUDED

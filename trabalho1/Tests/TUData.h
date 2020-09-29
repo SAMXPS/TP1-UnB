@@ -1,5 +1,5 @@
-#ifndef DATA_H_INCLUDED
-#define DATA_H_INCLUDED
+#ifndef TUDATA_H_INCLUDED
+#define TUDATA_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Data.h" 
@@ -37,4 +37,4 @@ inline string TUData::getValorCasoFalha() {
     return 0;
 };
 
-#endif // DATA_H_INCLUDED
+#endif // TUDATA_H_INCLUDED

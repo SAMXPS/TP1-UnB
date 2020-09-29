@@ -54,7 +54,7 @@ for dominio in dominios:
         continue
 
     variaveis = {
-        "$includedMask$": dominio.upper() + "_H_INCLUDED",
+        "$includedMask$": "TU" + dominio.upper() + "_H_INCLUDED",
         "$dominio$": dominio,
         "$tipoValor$": "string",
     }

@@ -1,5 +1,5 @@
-#ifndef VALORMINIMO_H_INCLUDED
-#define VALORMINIMO_H_INCLUDED
+#ifndef TUVALORMINIMO_H_INCLUDED
+#define TUVALORMINIMO_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/ValorMinimo.h" 
@@ -37,4 +37,4 @@ inline string TUValorMinimo::getValorCasoFalha() {
     return 0;
 };
 
-#endif // VALORMINIMO_H_INCLUDED
+#endif // TUVALORMINIMO_H_INCLUDED

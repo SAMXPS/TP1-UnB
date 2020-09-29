@@ -1,5 +1,5 @@
-#ifndef TAXA_H_INCLUDED
-#define TAXA_H_INCLUDED
+#ifndef TUTAXA_H_INCLUDED
+#define TUTAXA_H_INCLUDED
 
 #include "ResultadoTU.h"
 #include "../Dominios/Taxa.h" 
@@ -37,4 +37,4 @@ inline string TUTaxa::getValorCasoFalha() {
     return 0;
 };
 
-#endif // TAXA_H_INCLUDED
+#endif // TUTAXA_H_INCLUDED
