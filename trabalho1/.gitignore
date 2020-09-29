@@ -1,4 +1,5 @@
 obj/*
 *.depend
 bin/
+tools/out/*
 trabalho1.layout
