@@ -1,8 +1,9 @@
-#include <string>
+#include "CodigoDeAgencia.h"
+
 /**
  * Implementação de construtor da classe CodigoDeAgencia
  */
-CodigoDeAgencia::CodigoDeAgencia(string valor) {
+CodigoDeAgencia::CodigoDeAgencia(std::string valor) {
 	CodigoDeAgencia::validate(valor);
 	this->valor = valor;
 }
@@ -10,20 +11,20 @@ CodigoDeAgencia::CodigoDeAgencia(string valor) {
 /**
  * TODO: Explicar como funciona a validação da classe
  */
-CodigoDeAgencia::validate(string valor) throw invalid_argument {
+void CodigoDeAgencia::validate(std::string valor) throw (std::invalid_argument) {
 	// TODO: Implementar função de validação
-	if(strlen(valor) != 4){
-        throw new invalid_argument("O tamanho do codigo esta errado");
+	if(valor.length() != 4){
+        throw new std::invalid_argument("O tamanho do codigo esta errado");
 	}
-	if(valor == '0000'){
-        throw new invalid_argument("O codigo nao pode ser 0000");
+	if(valor == "0000"){
+        throw new std::invalid_argument("O codigo nao pode ser 0000");
 	}
 }
 
 /**
  * Implementação de método setter da classe CodigoDeAgencia
  */
-void CodigoDeAgencia::setValor(string valor) {
+void CodigoDeAgencia::setValor(std::string valor) {
 	CodigoDeAgencia::validate(valor);
 	this->valor = valor;
 }
