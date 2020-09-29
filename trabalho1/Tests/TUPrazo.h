@@ -14,27 +14,26 @@ class TUPrazo {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        int getValorDefault();
+        int getValorCasoFalha();
+        int getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUPrazo::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+// Valor 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66 ou 72 (mêses).
+
+inline int TUPrazo::getValorDefault() {
+    return 6;
 };
 
-inline string TUPrazo::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline int TUPrazo::getValorCasoSucesso() {
+    return 12;
 };
 
-inline string TUPrazo::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline int TUPrazo::getValorCasoFalha() {
+    return 13;
 };
 
 #endif // TUPRAZO_H_INCLUDED

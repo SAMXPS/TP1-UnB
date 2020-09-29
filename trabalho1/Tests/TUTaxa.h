@@ -14,27 +14,26 @@ class TUTaxa {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        float getValorDefault();
+        float getValorCasoFalha();
+        float getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUTaxa::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+// Valor na faixa de 0 a 200 (% ao ano).
+
+inline float TUTaxa::getValorDefault() {
+    return 10.0f;
 };
 
-inline string TUTaxa::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline float TUTaxa::getValorCasoSucesso() {
+    return 100.0f;
 };
 
-inline string TUTaxa::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline float TUTaxa::getValorCasoFalha() {
+    return 205.0f;
 };
 
 #endif // TUTAXA_H_INCLUDED

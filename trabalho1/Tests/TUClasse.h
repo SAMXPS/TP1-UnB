@@ -14,27 +14,24 @@ class TUClasse {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUClasse::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUClasse::getValorDefault() {
+    return "CDB";
 };
 
-inline string TUClasse::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUClasse::getValorCasoSucesso() {
+    return "LCA";
 };
 
-inline string TUClasse::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUClasse::getValorCasoFalha() {
+    return "COR";
 };
 
 #endif // TUCLASSE_H_INCLUDED

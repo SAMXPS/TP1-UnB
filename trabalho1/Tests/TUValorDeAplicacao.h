@@ -14,27 +14,26 @@ class TUValorDeAplicacao {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        double getValorDefault();
+        double getValorCasoFalha();
+        double getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUValorDeAplicacao::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+// Valor na faixa de 0 a 1000000.00 (reais).
+
+inline double TUValorDeAplicacao::getValorDefault() {
+    return 100.00;
 };
 
-inline string TUValorDeAplicacao::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline double TUValorDeAplicacao::getValorCasoSucesso() {
+    return 2020.57;
 };
 
-inline string TUValorDeAplicacao::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline double TUValorDeAplicacao::getValorCasoFalha() {
+    return 1000001.00;
 };
 
 #endif // TUVALORDEAPLICACAO_H_INCLUDED

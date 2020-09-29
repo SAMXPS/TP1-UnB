@@ -14,27 +14,28 @@ class TUNome {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUNome::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+// Texto composto por 5 a 30 caracteres onde cada caracter pode ser letra (A-Z ou a-z) ou
+// espaço, há pelo menos 5 letras, não há espaços em sequência, primeira letra de cada termo é
+// letra maiúscula.
+
+inline std::string TUNome::getValorDefault() {
+    return "Samuel James";
 };
 
-inline string TUNome::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUNome::getValorCasoSucesso() {
+    return "Lucas Aquino";
 };
 
-inline string TUNome::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUNome::getValorCasoFalha() {
+    return "sAMUEL";
 };
 
 #endif // TUNOME_H_INCLUDED

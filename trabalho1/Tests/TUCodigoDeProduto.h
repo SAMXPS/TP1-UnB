@@ -14,27 +14,24 @@ class TUCodigoDeProduto {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUCodigoDeProduto::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUCodigoDeProduto::getValorDefault() {
+    return "001";
 };
 
-inline string TUCodigoDeProduto::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUCodigoDeProduto::getValorCasoSucesso() {
+    return "123";
 };
 
-inline string TUCodigoDeProduto::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUCodigoDeProduto::getValorCasoFalha() {
+    return "000";
 };
 
 #endif // TUCODIGODEPRODUTO_H_INCLUDED

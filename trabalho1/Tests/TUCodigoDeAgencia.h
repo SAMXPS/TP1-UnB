@@ -14,27 +14,24 @@ class TUCodigoDeAgencia {
         void terminar();
         
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUCodigoDeAgencia::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+inline std::string TUCodigoDeAgencia::getValorDefault() {
+    return "0001";
 };
 
 inline string TUCodigoDeAgencia::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+    return "1239";
 };
 
 inline string TUCodigoDeAgencia::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+    return "0000";
 };
 
 #endif // TUCODIGODEAGENCIA_H_INCLUDED

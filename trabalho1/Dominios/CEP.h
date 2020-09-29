@@ -1,7 +1,8 @@
 #ifndef CEP_H_INCLUDED
 #define CEP_H_INCLUDED
-
 #include <stdexcept>	// std::invalid_argument
+
+// Implementação por Samuel James
 
 /**
  * O Domínio CEP(Código de Endereçamento Postal) representa um código numérico que pode ser utilizado
