@@ -12,9 +12,9 @@ class CodigoDeBanco {
     private:
 		std::string valor;
 		static const int tamanho = 3;
+		
 		/**
-		 * Método estático que faz a validação do valor.
-		 * Para mais informações, vide documentação de implementação do mesmo.
+		 * TODO: Explicar como funciona a validação da classe
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 
