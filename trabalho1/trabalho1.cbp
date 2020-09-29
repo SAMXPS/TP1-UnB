@@ -106,12 +106,7 @@
 		<Unit filename="Tests/TUValorDeAplicacao.h" />
 		<Unit filename="Tests/TUValorMinimo.cpp" />
 		<Unit filename="Tests/TUValorMinimo.h" />
-		<Unit filename="dominios.cpp" />
-		<Unit filename="dominios.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="test.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
