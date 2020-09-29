@@ -7,7 +7,7 @@
 /**
  * TODO: Dar explicação resumida sobre a classe
  */
-class CodigoDeAplicacao  {
+class CodigoDeAplicacao {
 	
     private:
 		std::string valor;
@@ -42,7 +42,7 @@ class CodigoDeAplicacao  {
 /**
  * Implementação de método getter inline
  */
-inline const std::string CodigoDeAplicacao ::getValor() {
+inline const std::string CodigoDeAplicacao::getValor() {
 	return valor;
 }
 
