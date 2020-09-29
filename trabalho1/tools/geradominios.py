@@ -4,7 +4,7 @@ dominios = [
     "CEP",
     "Classe",
     "CodigoDeAgencia",
-    "CodigoDeAplicacao ",
+    "CodigoDeAplicacao",
     "CodigoDeBanco",
     "CodigoDeProduto",
     "CPF",

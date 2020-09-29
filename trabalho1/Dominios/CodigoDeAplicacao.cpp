@@ -1,3 +1,4 @@
+#include "CodigoDeAplicacao.h"
 
 /**
  * Implementação de construtor da classe CodigoDeAplicacao 
