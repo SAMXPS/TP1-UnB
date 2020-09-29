@@ -1,22 +1,19 @@
-#include "TU.h"
+#include "TUCEP.h"
 
-template<class Dominio, class ValorDominio>
-bool TU<Dominio, ValorDominio>::configurar() {
+bool TUCEP::configurar() {
     try {
-        this->instancia = new Dominio(this->getValorDefault());
+        this->instancia = new CEP(this->getValorDefault());
         return ResultadoTU::PASSOU;
     } catch (...) {
         return ResultadoTU::FALHOU;
     }
 }
 
-template<class Dominio, class ValorDominio>
-void TU<Dominio, ValorDominio>::terminar() {
+void TUCEP::terminar() {
     delete instancia;
 }
 
-template<class Dominio, class ValorDominio>
-bool TU<Dominio, ValorDominio>::testarCenarioSucesso() {
+bool TUCEP::testarCenarioSucesso() {
     try {
         // Tenta-se definir o valor válido na instância.
         this->instancia->setValor(this->getValorCasoSucesso());
@@ -32,9 +29,8 @@ bool TU<Dominio, ValorDominio>::testarCenarioSucesso() {
     return ResultadoTU::FALHOU;
 }
 
-template<class Dominio, class ValorDominio>
-bool TU<Dominio, ValorDominio>::testarCenarioFalha() {
-    ValorDominio valorInicial = this->instancia->getValor();
+bool TUCEP::testarCenarioFalha() {
+    long valorInicial = this->instancia->getValor();
 
     try {
         // Tenta-se definir o valor inválido na instância.
@@ -50,8 +46,7 @@ bool TU<Dominio, ValorDominio>::testarCenarioFalha() {
     return ResultadoTU::FALHOU;
 }
 
-template<class Dominio, class ValorDominio>
-ResultadoTU TU<Dominio, ValorDominio>::testar() {
+ResultadoTU TUCEP::testar() {
     ResultadoTU resultado;
     resultado.criacaoDeObjeto = this->configurar();
     resultado.cenarioFalha = this->testarCenarioFalha();

@@ -1,23 +1,40 @@
 #ifndef TUCEP_H_INCLUDED
 #define TUCEP_H_INCLUDED
 
-#include "TU.h"                 // Abstração de teste unitário
-#include "../Dominios/CEP.h"    // Classe de domínio a ser testada
+#include "ResultadoTU.h"
+#include "../Dominios/CEP.h" 
 
-class TUCEP : public TU<CEP, long> {
+class TUCEP {        
+    private:
+        CEP* instancia;
+
+        bool configurar();
+        bool testarCenarioSucesso();
+        bool testarCenarioFalha();
+        void terminar();
+        
     protected:
-    
-        long getValorCasoFalha() {
-            return 71000000;
-        };
+        long getValorDefault();
+        long getValorCasoSucesso();
+        long getValorCasoFalha();
 
-        long getValorCasoSucesso() {
-            return 70999998;
-        }
+    public:
+        ResultadoTU testar();
+};
 
-        long getValorDefault() {
-            return 20000001;
-        }
+inline long TUCEP::getValorDefault() {
+    // TODO: Preencher valor
+    return 20000001;
+};
+
+inline long TUCEP::getValorCasoSucesso() {
+    // TODO: Preencher valor
+    return 70999998;
+};
+
+inline long TUCEP::getValorCasoFalha() {
+    // TODO: Preencher valor
+    return 71000000;
 };
 
 #endif // TUCEP_H_INCLUDED
