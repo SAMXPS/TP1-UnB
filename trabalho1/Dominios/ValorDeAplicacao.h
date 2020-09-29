@@ -1,6 +1,9 @@
 #ifndef VALORDEAPLICACAO_H_INCLUDED
 #define VALORDEAPLICACAO_H_INCLUDED
 
+#include <string>		// std::string
+#include <stdexcept>	// std::invalid_argument
+
 /**
  * TODO: Dar explicação resumida sobre a classe
  */
@@ -34,7 +37,7 @@ class ValorDeAplicacao {
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
 		const string getValor();
-}
+};
 
 /**
  * Implementação de método getter inline

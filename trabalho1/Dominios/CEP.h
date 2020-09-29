@@ -2,7 +2,6 @@
 #define CEP_H_INCLUDED
 
 #include <stdexcept>	// std::invalid_argument
-using namespace std;
 
 /**
  * O Domínio CEP(Código de Endereçamento Postal) representa um código numérico que pode ser utilizado
@@ -25,7 +24,7 @@ class CEP {
 		 * Método estático que faz a validação do valor.
 		 * Para mais informações, vide documentação de implementação do mesmo.
 		 */
-        static void validate(long valor) throw(invalid_argument);
+        static void validate(long valor) throw(std::invalid_argument);
 
     public:
 		/**
