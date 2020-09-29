@@ -46,4 +46,4 @@ inline const std::string CodigoDeProduto::getValor() {
 	return valor;
 }
 
-#endif CODIGODEPRODUTO_H_INCLUDED
+#endif // CODIGODEPRODUTO_H_INCLUDED

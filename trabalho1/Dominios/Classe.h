@@ -46,4 +46,4 @@ inline const std::string Classe::getValor() {
 	return valor;
 }
 
-#endif CLASSE_H_INCLUDED
+#endif // CLASSE_H_INCLUDED

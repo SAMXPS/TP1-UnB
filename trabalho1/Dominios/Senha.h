@@ -46,4 +46,4 @@ inline const std::string Senha::getValor() {
 	return valor;
 }
 
-#endif SENHA_H_INCLUDED
+#endif // SENHA_H_INCLUDED

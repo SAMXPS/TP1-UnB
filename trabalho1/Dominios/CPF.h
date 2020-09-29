@@ -46,4 +46,4 @@ inline const std::string CPF::getValor() {
 	return valor;
 }
 
-#endif CPF_H_INCLUDED
+#endif // CPF_H_INCLUDED

@@ -49,4 +49,4 @@ inline const std::string Horario::getValor() {
 	return valor;
 }
 
-#endif HORARIO_H_INCLUDED
+#endif // HORARIO_H_INCLUDED

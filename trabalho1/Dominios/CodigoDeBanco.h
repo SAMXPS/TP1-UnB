@@ -46,4 +46,4 @@ inline const std::string CodigoDeBanco::getValor() {
 	return valor;
 }
 
-#endif CODIGODEBANCO_H_INCLUDED
+#endif // CODIGODEBANCO_H_INCLUDED

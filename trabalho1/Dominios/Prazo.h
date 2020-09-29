@@ -46,4 +46,4 @@ inline const std::string Prazo::getValor() {
 	return valor;
 }
 
-#endif PRAZO_H_INCLUDED
+#endif // PRAZO_H_INCLUDED

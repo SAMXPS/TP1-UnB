@@ -46,4 +46,4 @@ inline const std::string CodigoDeAgencia::getValor() {
 	return valor;
 }
 
-#endif CODIGODEAGENCIA_H_INCLUDED
+#endif // CODIGODEAGENCIA_H_INCLUDED

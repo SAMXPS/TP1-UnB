@@ -46,4 +46,4 @@ inline const std::string Taxa::getValor() {
 	return valor;
 }
 
-#endif TAXA_H_INCLUDED
+#endif // TAXA_H_INCLUDED

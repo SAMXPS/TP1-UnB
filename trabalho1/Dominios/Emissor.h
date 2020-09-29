@@ -47,4 +47,4 @@ inline const std::string Emissor::getValor() {
 	return valor;
 }
 
-#endif EMISSOR_H_INCLUDED
+#endif // EMISSOR_H_INCLUDED

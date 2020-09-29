@@ -46,4 +46,4 @@ inline const std::string Nome::getValor() {
 	return valor;
 }
 
-#endif NOME_H_INCLUDED
+#endif // NOME_H_INCLUDED

@@ -46,4 +46,4 @@ inline const std::string Numero::getValor() {
 	return valor;
 }
 
-#endif NUMERO_H_INCLUDED
+#endif // NUMERO_H_INCLUDED

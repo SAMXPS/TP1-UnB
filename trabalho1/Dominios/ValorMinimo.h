@@ -45,4 +45,4 @@ inline const std::string ValorMinimo::getValor() {
 	return valor;
 }
 
-#endif VALORMINIMO_H_INCLUDED
+#endif // VALORMINIMO_H_INCLUDED

@@ -46,4 +46,4 @@ inline const std::string Data::getValor() {
 	return valor;
 }
 
-#endif DATA_H_INCLUDED
+#endif // DATA_H_INCLUDED

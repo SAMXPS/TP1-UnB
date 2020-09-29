@@ -46,4 +46,4 @@ inline const std::string ValorDeAplicacao::getValor() {
 	return valor;
 }
 
-#endif VALORDEAPLICACAO_H_INCLUDED
+#endif // VALORDEAPLICACAO_H_INCLUDED
