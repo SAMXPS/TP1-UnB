@@ -1,6 +1,8 @@
 #include "CEP.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 CEP::CEP(long valor) {
 	CEP::validate(valor);
 	this->valor = valor;
@@ -13,7 +15,7 @@ void CEP::validate(long valor) throw(invalid_argument) {
         || (valor > 26600999 && valor < 40000000)   // inválidos entre RJ e SALVADOR
         || (valor > 41999999 && valor < 60000000)   // inválidos entre SALVADOR E FORTALEZA
         || (valor > 60999999 && valor < 70000000)   // inválidos entre FORTALEZA E BRASILIA
-    ) throw new invalid_argument("O valor de CEP informado não está dentro das faixas válidas definidas.");
+    ) throw invalid_argument("O valor de CEP informado não está dentro das faixas válidas definidas.");
 }
 
 void CEP::setValor(long valor) {
