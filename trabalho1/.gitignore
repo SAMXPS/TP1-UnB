@@ -1,4 +1,3 @@
-.vscode/
 obj/*
 *.depend
 bin/
