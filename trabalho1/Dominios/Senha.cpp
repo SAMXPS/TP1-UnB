@@ -13,7 +13,7 @@ void Senha::validate(string valor) throw (invalid_argument){
 	for(int i = 0; i < 6; i++){
         for(int j = i + 1; j < tamanho; j++){
             if(valor[j] ==  valor[i]){
-                throw new invalid_argument("Nao podem conter numeros repetidos")
+                throw new invalid_argument("Nao podem conter numeros repetidos");
             }
         }
 	}
