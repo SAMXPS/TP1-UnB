@@ -2,9 +2,9 @@
 #define TUNUMERO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Numero.h" 
+#include "../Dominios/Numero.h"
 
-class TUNumero {        
+class TUNumero {
     private:
         Numero* instancia;
 
@@ -12,7 +12,7 @@ class TUNumero {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -24,17 +24,17 @@ class TUNumero {
 
 inline string TUNumero::getValorDefault() {
     // TODO: Preencher valor
-    return 0;
+    return "111111-2";
 };
 
 inline string TUNumero::getValorCasoSucesso() {
     // TODO: Preencher valor
-    return 0;
+    return "345678-1";
 };
 
 inline string TUNumero::getValorCasoFalha() {
     // TODO: Preencher valor
-    return 0;
+    return "456789-5";
 };
 
 #endif // TUNUMERO_H_INCLUDED

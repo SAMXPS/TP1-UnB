@@ -2,9 +2,9 @@
 #define TUHORARIO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Horario.h" 
+#include "../Dominios/Horario.h"
 
-class TUHorario {        
+class TUHorario {
     private:
         Horario* instancia;
 
@@ -12,7 +12,7 @@ class TUHorario {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -23,18 +23,15 @@ class TUHorario {
 };
 
 inline string TUHorario::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+    return "13:00";
 };
 
 inline string TUHorario::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+    return "15:10";
 };
 
 inline string TUHorario::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+    return "17:01";
 };
 
 #endif // TUHORARIO_H_INCLUDED

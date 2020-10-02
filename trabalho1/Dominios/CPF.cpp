@@ -1,4 +1,5 @@
 #include "CPF.h"
+#include <ctype.h>
 using namespace std;
 
 CPF::CPF(string valor) {
@@ -7,7 +8,6 @@ CPF::CPF(string valor) {
 }
 
 void CPF::validate(string valor) throw(invalid_argument) {
-	// TODO: Implementar função de validação
 	if(valor.size() != tamanho){
         throw invalid_argument("O CPF nao tem o tamanho padrao");
 	}

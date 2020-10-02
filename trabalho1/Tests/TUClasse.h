@@ -2,9 +2,9 @@
 #define TUCLASSE_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Classe.h" 
+#include "../Dominios/Classe.h"
 
-class TUClasse {        
+class TUClasse {
     private:
         Classe* instancia;
 
@@ -12,7 +12,7 @@ class TUClasse {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         std::string getValorDefault();
         std::string getValorCasoFalha();

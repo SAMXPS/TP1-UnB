@@ -2,9 +2,9 @@
 #define TUEMISSOR_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Emissor.h" 
+#include "../Dominios/Emissor.h"
 
-class TUEmissor {        
+class TUEmissor {
     private:
         Emissor* instancia;
 
@@ -12,7 +12,7 @@ class TUEmissor {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -23,18 +23,15 @@ class TUEmissor {
 };
 
 inline string TUEmissor::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+    return "Padrao";
 };
 
 inline string TUEmissor::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+    return "Aceito.1";
 };
 
 inline string TUEmissor::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+    return "negado";
 };
 
 #endif // TUEMISSOR_H_INCLUDED

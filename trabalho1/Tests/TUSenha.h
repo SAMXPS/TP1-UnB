@@ -2,9 +2,9 @@
 #define TUSENHA_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Senha.h" 
+#include "../Dominios/Senha.h"
 
-class TUSenha {        
+class TUSenha {
     private:
         Senha* instancia;
 
@@ -12,7 +12,7 @@ class TUSenha {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -24,17 +24,17 @@ class TUSenha {
 
 inline string TUSenha::getValorDefault() {
     // TODO: Preencher valor
-    return 0;
+    return "123456";
 };
 
 inline string TUSenha::getValorCasoSucesso() {
     // TODO: Preencher valor
-    return 0;
+    return "654789";
 };
 
 inline string TUSenha::getValorCasoFalha() {
     // TODO: Preencher valor
-    return 0;
+    return "189107";
 };
 
 #endif // TUSENHA_H_INCLUDED

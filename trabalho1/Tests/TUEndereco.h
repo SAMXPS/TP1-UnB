@@ -2,9 +2,9 @@
 #define TUENDERECO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/Endereco.h" 
+#include "../Dominios/Endereco.h"
 
-class TUEndereco {        
+class TUEndereco {
     private:
         Endereco* instancia;
 
@@ -12,7 +12,7 @@ class TUEndereco {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -23,18 +23,15 @@ class TUEndereco {
 };
 
 inline string TUEndereco::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+    return "UnB";
 };
 
 inline string TUEndereco::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+    return "UnB-certo";
 };
 
 inline string TUEndereco::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+    return "UnB--errado";
 };
 
 #endif // TUENDERECO_H_INCLUDED

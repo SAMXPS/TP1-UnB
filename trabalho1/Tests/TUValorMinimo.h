@@ -2,9 +2,9 @@
 #define TUVALORMINIMO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/ValorMinimo.h" 
+#include "../Dominios/ValorMinimo.h"
 
-class TUValorMinimo {        
+class TUValorMinimo {
     private:
         ValorMinimo* instancia;
 
@@ -12,7 +12,7 @@ class TUValorMinimo {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -24,17 +24,17 @@ class TUValorMinimo {
 
 inline string TUValorMinimo::getValorDefault() {
     // TODO: Preencher valor
-    return 0;
+    return 1000;
 };
 
 inline string TUValorMinimo::getValorCasoSucesso() {
     // TODO: Preencher valor
-    return 0;
+    return 5000;
 };
 
 inline string TUValorMinimo::getValorCasoFalha() {
     // TODO: Preencher valor
-    return 0;
+    return 2000;
 };
 
 #endif // TUVALORMINIMO_H_INCLUDED

@@ -2,9 +2,9 @@
 #define TUCODIGODEAPLICACAO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/CodigoDeAplicacao.h" 
+#include "../Dominios/CodigoDeAplicacao.h"
 
-class TUCodigoDeAplicacao {        
+class TUCodigoDeAplicacao {
     private:
         CodigoDeAplicacao* instancia;
 
@@ -12,7 +12,7 @@ class TUCodigoDeAplicacao {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -23,18 +23,15 @@ class TUCodigoDeAplicacao {
 };
 
 inline string TUCodigoDeAplicacao::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+    return "99999";
 };
 
 inline string TUCodigoDeAplicacao::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+    return "12345";
 };
 
 inline string TUCodigoDeAplicacao::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+    return "00000";
 };
 
 #endif // TUCODIGODEAPLICACAO_H_INCLUDED

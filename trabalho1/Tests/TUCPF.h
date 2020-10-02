@@ -2,9 +2,9 @@
 #define TUCPF_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/CPF.h" 
+#include "../Dominios/CPF.h"
 
-class TUCPF {        
+class TUCPF {
     private:
         CPF* instancia;
 
@@ -12,7 +12,7 @@ class TUCPF {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -23,18 +23,18 @@ class TUCPF {
 };
 
 inline string TUCPF::getValorDefault() {
-    // TODO: Preencher valor
-    return 0;
+
+    return "111.444.777-35";
 };
 
 inline string TUCPF::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 0;
+
+    return "246.894.452-65";
 };
 
 inline string TUCPF::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 0;
+
+    return "246.894.452-35";
 };
 
 #endif // TUCPF_H_INCLUDED

@@ -2,9 +2,9 @@
 #define TUCODIGODEBANCO_H_INCLUDED
 
 #include "ResultadoTU.h"
-#include "../Dominios/CodigoDeBanco.h" 
+#include "../Dominios/CodigoDeBanco.h"
 
-class TUCodigoDeBanco {        
+class TUCodigoDeBanco {
     private:
         CodigoDeBanco* instancia;
 
@@ -12,7 +12,7 @@ class TUCodigoDeBanco {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         string getValorDefault();
         string getValorCasoFalha();
@@ -24,17 +24,17 @@ class TUCodigoDeBanco {
 
 inline string TUCodigoDeBanco::getValorDefault() {
     // TODO: Preencher valor
-    return 0;
+    return "001";
 };
 
 inline string TUCodigoDeBanco::getValorCasoSucesso() {
     // TODO: Preencher valor
-    return 0;
+    return "341";
 };
 
 inline string TUCodigoDeBanco::getValorCasoFalha() {
     // TODO: Preencher valor
-    return 0;
+    return "555";
 };
 
 #endif // TUCODIGODEBANCO_H_INCLUDED

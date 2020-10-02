@@ -8,31 +8,31 @@
  * TODO: Dar explicação resumida sobre a classe
  */
 class ValorDeAplicacao {
-	
+
     private:
 		std::string valor;
-
+        static const int tamanho = 5;
 		/**
 		 * TODO: Explicar como funciona a validação da classe
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
-		
+
     public:
 		/**
 		 * Método construtor da classe ValorDeAplicacao
 		 */
 		ValorDeAplicacao(std::string valor);
-		
+
 		/**
-		 * Método setter: 
+		 * Método setter:
 		 *  - Verifica se o valor informado é valido, por meio do método validar;
 		 *  - Se for inválido, lança exceção;
 		 *  - Se for válido, atribui o valor ao atributo do objeto de classe.
 		 */
 		void setValor(std::string valor);
-		
+
 		/**
-		 * Método getter: 
+		 * Método getter:
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
 		const std::string getValor();
