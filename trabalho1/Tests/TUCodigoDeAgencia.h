@@ -1,10 +1,11 @@
 #ifndef TUCODIGODEAGENCIA_H_INCLUDED
 #define TUCODIGODEAGENCIA_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeAgencia.h" 
 
-class TUCodigoDeAgencia {        
+class TUCodigoDeAgencia : public TU {        
     private:
         CodigoDeAgencia* instancia;
 

@@ -1,10 +1,11 @@
 #ifndef TUDATA_H_INCLUDED
 #define TUDATA_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Data.h" 
 
-class TUData {        
+class TUData : public TU {        
     private:
         Data* instancia;
 

@@ -1,10 +1,11 @@
 #ifndef TUENDERECO_H_INCLUDED
 #define TUENDERECO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Endereco.h"
 
-class TUEndereco {
+class TUEndereco : public TU {
     private:
         Endereco* instancia;
 
@@ -14,23 +15,23 @@ class TUEndereco {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUEndereco::getValorDefault() {
+inline std::string TUEndereco::getValorDefault() {
     return "UnB";
 };
 
-inline string TUEndereco::getValorCasoSucesso() {
+inline std::string TUEndereco::getValorCasoSucesso() {
     return "UnB-certo";
 };
 
-inline string TUEndereco::getValorCasoFalha() {
+inline std::string TUEndereco::getValorCasoFalha() {
     return "UnB--errado";
 };
 

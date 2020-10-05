@@ -1,10 +1,11 @@
 #ifndef TUNUMERO_H_INCLUDED
 #define TUNUMERO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Numero.h"
 
-class TUNumero {
+class TUNumero : public TU {
     private:
         Numero* instancia;
 
@@ -14,25 +15,25 @@ class TUNumero {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUNumero::getValorDefault() {
+inline std::string TUNumero::getValorDefault() {
     // TODO: Preencher valor
     return "111111-2";
 };
 
-inline string TUNumero::getValorCasoSucesso() {
+inline std::string TUNumero::getValorCasoSucesso() {
     // TODO: Preencher valor
     return "345678-1";
 };
 
-inline string TUNumero::getValorCasoFalha() {
+inline std::string TUNumero::getValorCasoFalha() {
     // TODO: Preencher valor
     return "456789-5";
 };

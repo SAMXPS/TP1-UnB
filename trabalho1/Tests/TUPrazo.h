@@ -1,10 +1,11 @@
 #ifndef TUPRAZO_H_INCLUDED
 #define TUPRAZO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Prazo.h" 
 
-class TUPrazo {        
+class TUPrazo : public TU {        
     private:
         Prazo* instancia;
 

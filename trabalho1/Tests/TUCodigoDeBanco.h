@@ -1,10 +1,11 @@
 #ifndef TUCODIGODEBANCO_H_INCLUDED
 #define TUCODIGODEBANCO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeBanco.h"
 
-class TUCodigoDeBanco {
+class TUCodigoDeBanco : public TU {
     private:
         CodigoDeBanco* instancia;
 
@@ -14,25 +15,25 @@ class TUCodigoDeBanco {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUCodigoDeBanco::getValorDefault() {
+inline std::string TUCodigoDeBanco::getValorDefault() {
     // TODO: Preencher valor
     return "001";
 };
 
-inline string TUCodigoDeBanco::getValorCasoSucesso() {
+inline std::string TUCodigoDeBanco::getValorCasoSucesso() {
     // TODO: Preencher valor
     return "341";
 };
 
-inline string TUCodigoDeBanco::getValorCasoFalha() {
+inline std::string TUCodigoDeBanco::getValorCasoFalha() {
     // TODO: Preencher valor
     return "555";
 };

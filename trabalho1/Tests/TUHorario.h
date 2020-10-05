@@ -1,10 +1,11 @@
 #ifndef TUHORARIO_H_INCLUDED
 #define TUHORARIO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Horario.h"
 
-class TUHorario {
+class TUHorario : public TU {
     private:
         Horario* instancia;
 
@@ -14,23 +15,23 @@ class TUHorario {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUHorario::getValorDefault() {
+inline std::string TUHorario::getValorDefault() {
     return "13:00";
 };
 
-inline string TUHorario::getValorCasoSucesso() {
+inline std::string TUHorario::getValorCasoSucesso() {
     return "15:10";
 };
 
-inline string TUHorario::getValorCasoFalha() {
+inline std::string TUHorario::getValorCasoFalha() {
     return "17:01";
 };
 

@@ -1,10 +1,11 @@
 #ifndef TUNOME_H_INCLUDED
 #define TUNOME_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Nome.h" 
 
-class TUNome {        
+class TUNome : public TU {        
     private:
         Nome* instancia;
 

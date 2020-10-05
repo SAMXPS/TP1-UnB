@@ -1,10 +1,11 @@
 #ifndef TUCPF_H_INCLUDED
 #define TUCPF_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CPF.h"
 
-class TUCPF {
+class TUCPF : public TU {
     private:
         CPF* instancia;
 
@@ -14,25 +15,25 @@ class TUCPF {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUCPF::getValorDefault() {
+inline std::string TUCPF::getValorDefault() {
 
     return "111.444.777-35";
 };
 
-inline string TUCPF::getValorCasoSucesso() {
+inline std::string TUCPF::getValorCasoSucesso() {
 
     return "246.894.452-65";
 };
 
-inline string TUCPF::getValorCasoFalha() {
+inline std::string TUCPF::getValorCasoFalha() {
 
     return "246.894.452-35";
 };

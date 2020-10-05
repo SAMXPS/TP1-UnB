@@ -1,10 +1,11 @@
 #ifndef TUCODIGODEPRODUTO_H_INCLUDED
 #define TUCODIGODEPRODUTO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeProduto.h" 
 
-class TUCodigoDeProduto {        
+class TUCodigoDeProduto : public TU {        
     private:
         CodigoDeProduto* instancia;
 

@@ -1,6 +1,8 @@
 #include "CodigoDeAplicacao.h"
 using namespace std;
 
+// Implementação por Samuel James
+
 CodigoDeAplicacao::CodigoDeAplicacao(string valor) {
 	CodigoDeAplicacao ::validate(valor);
 	this->valor = valor;

@@ -1,10 +1,11 @@
 #ifndef TUCODIGODEAPLICACAO_H_INCLUDED
 #define TUCODIGODEAPLICACAO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CodigoDeAplicacao.h"
 
-class TUCodigoDeAplicacao {
+class TUCodigoDeAplicacao : public TU {
     private:
         CodigoDeAplicacao* instancia;
 
@@ -14,23 +15,23 @@ class TUCodigoDeAplicacao {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUCodigoDeAplicacao::getValorDefault() {
+inline std::string TUCodigoDeAplicacao::getValorDefault() {
     return "99999";
 };
 
-inline string TUCodigoDeAplicacao::getValorCasoSucesso() {
+inline std::string TUCodigoDeAplicacao::getValorCasoSucesso() {
     return "12345";
 };
 
-inline string TUCodigoDeAplicacao::getValorCasoFalha() {
+inline std::string TUCodigoDeAplicacao::getValorCasoFalha() {
     return "00000";
 };
 

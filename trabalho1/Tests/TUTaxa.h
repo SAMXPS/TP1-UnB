@@ -1,10 +1,11 @@
 #ifndef TUTAXA_H_INCLUDED
 #define TUTAXA_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Taxa.h" 
 
-class TUTaxa {        
+class TUTaxa : public TU {        
     private:
         Taxa* instancia;
 
@@ -14,9 +15,9 @@ class TUTaxa {
         void terminar();
         
     protected:
-        float getValorDefault();
-        float getValorCasoFalha();
-        float getValorCasoSucesso();
+        double getValorDefault();
+        double getValorCasoFalha();
+        double getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
@@ -24,15 +25,15 @@ class TUTaxa {
 
 // Valor na faixa de 0 a 200 (% ao ano).
 
-inline float TUTaxa::getValorDefault() {
+inline double TUTaxa::getValorDefault() {
     return 10.0f;
 };
 
-inline float TUTaxa::getValorCasoSucesso() {
+inline double TUTaxa::getValorCasoSucesso() {
     return 100.0f;
 };
 
-inline float TUTaxa::getValorCasoFalha() {
+inline double TUTaxa::getValorCasoFalha() {
     return 205.0f;
 };
 

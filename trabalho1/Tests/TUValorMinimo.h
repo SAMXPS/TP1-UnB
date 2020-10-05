@@ -1,10 +1,11 @@
 #ifndef TUVALORMINIMO_H_INCLUDED
 #define TUVALORMINIMO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/ValorMinimo.h"
 
-class TUValorMinimo {
+class TUValorMinimo : public TU {
     private:
         ValorMinimo* instancia;
 
@@ -14,27 +15,24 @@ class TUValorMinimo {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        double getValorDefault();
+        double getValorCasoFalha();
+        double getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUValorMinimo::getValorDefault() {
-    // TODO: Preencher valor
-    return 1000;
+inline double TUValorMinimo::getValorDefault() {
+    return 1000.0f;
 };
 
-inline string TUValorMinimo::getValorCasoSucesso() {
-    // TODO: Preencher valor
-    return 5000;
+inline double TUValorMinimo::getValorCasoSucesso() {
+    return 5000.0f;
 };
 
-inline string TUValorMinimo::getValorCasoFalha() {
-    // TODO: Preencher valor
-    return 2000;
+inline double TUValorMinimo::getValorCasoFalha() {
+    return 2000.0f;
 };
 
 #endif // TUVALORMINIMO_H_INCLUDED

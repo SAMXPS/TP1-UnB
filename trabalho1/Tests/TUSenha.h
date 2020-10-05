@@ -1,10 +1,11 @@
 #ifndef TUSENHA_H_INCLUDED
 #define TUSENHA_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Senha.h"
 
-class TUSenha {
+class TUSenha : public TU {
     private:
         Senha* instancia;
 
@@ -14,25 +15,25 @@ class TUSenha {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUSenha::getValorDefault() {
+inline std::string TUSenha::getValorDefault() {
     // TODO: Preencher valor
     return "123456";
 };
 
-inline string TUSenha::getValorCasoSucesso() {
+inline std::string TUSenha::getValorCasoSucesso() {
     // TODO: Preencher valor
     return "654789";
 };
 
-inline string TUSenha::getValorCasoFalha() {
+inline std::string TUSenha::getValorCasoFalha() {
     // TODO: Preencher valor
     return "189107";
 };

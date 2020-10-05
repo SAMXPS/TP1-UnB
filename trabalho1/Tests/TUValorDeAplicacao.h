@@ -1,10 +1,11 @@
 #ifndef TUVALORDEAPLICACAO_H_INCLUDED
 #define TUVALORDEAPLICACAO_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/ValorDeAplicacao.h" 
 
-class TUValorDeAplicacao {        
+class TUValorDeAplicacao : public TU {        
     private:
         ValorDeAplicacao* instancia;
 

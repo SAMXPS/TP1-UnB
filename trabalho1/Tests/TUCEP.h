@@ -1,10 +1,11 @@
 #ifndef TUCEP_H_INCLUDED
 #define TUCEP_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/CEP.h" 
 
-class TUCEP {        
+class TUCEP : public TU {        
     private:
         CEP* instancia;
 

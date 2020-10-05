@@ -1,10 +1,11 @@
 #ifndef TUCLASSE_H_INCLUDED
 #define TUCLASSE_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Classe.h"
 
-class TUClasse {
+class TUClasse : public TU {
     private:
         Classe* instancia;
 

@@ -1,10 +1,11 @@
 #ifndef TUEMISSOR_H_INCLUDED
 #define TUEMISSOR_H_INCLUDED
 
+#include "TU.h"
 #include "ResultadoTU.h"
 #include "../Dominios/Emissor.h"
 
-class TUEmissor {
+class TUEmissor : public TU {
     private:
         Emissor* instancia;
 
@@ -14,23 +15,23 @@ class TUEmissor {
         void terminar();
 
     protected:
-        string getValorDefault();
-        string getValorCasoFalha();
-        string getValorCasoSucesso();
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
 
     public:
         ResultadoTU testar();
 };
 
-inline string TUEmissor::getValorDefault() {
+inline std::string TUEmissor::getValorDefault() {
     return "Padrao";
 };
 
-inline string TUEmissor::getValorCasoSucesso() {
+inline std::string TUEmissor::getValorCasoSucesso() {
     return "Aceito.1";
 };
 
-inline string TUEmissor::getValorCasoFalha() {
+inline std::string TUEmissor::getValorCasoFalha() {
     return "negado";
 };
 
