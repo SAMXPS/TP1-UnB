@@ -21,7 +21,12 @@ class TUValorDeAplicacao : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
+
+inline std::string TUValorDeAplicacao::getNomeUnidade() {
+    return "ValorDeAplicacao";
+}
 
 // Valor na faixa de 0 a 1000000.00 (reais).
 

@@ -1,5 +1,5 @@
-#ifndef CODIGODEAPLICACAO _H_INCLUDED
-#define CODIGODEAPLICACAO _H_INCLUDED
+#ifndef CODIGODEAPLICACAO_H_INCLUDED
+#define CODIGODEAPLICACAO_H_INCLUDED
 
 #include <string>		// std::string
 #include <stdexcept>	// std::invalid_argument
@@ -45,4 +45,4 @@ inline const std::string CodigoDeAplicacao::getValor() {
 	return valor;
 }
 
-#endif // CODIGODEAPLICACAO _H_INCLUDED
+#endif // CODIGODEAPLICACAO_H_INCLUDED

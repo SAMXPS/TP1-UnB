@@ -3,9 +3,9 @@
 
 #include "TU.h"
 #include "ResultadoTU.h"
-#include "../Dominios/CodigoDeAgencia.h" 
+#include "../Dominios/CodigoDeAgencia.h"
 
-class TUCodigoDeAgencia : public TU {        
+class TUCodigoDeAgencia : public TU {
     private:
         CodigoDeAgencia* instancia;
 
@@ -13,7 +13,7 @@ class TUCodigoDeAgencia : public TU {
         bool testarCenarioSucesso();
         bool testarCenarioFalha();
         void terminar();
-        
+
     protected:
         std::string getValorDefault();
         std::string getValorCasoFalha();
@@ -27,11 +27,11 @@ inline std::string TUCodigoDeAgencia::getValorDefault() {
     return "0001";
 };
 
-inline string TUCodigoDeAgencia::getValorCasoSucesso() {
+inline std::string TUCodigoDeAgencia::getValorCasoSucesso() {
     return "1239";
 };
 
-inline string TUCodigoDeAgencia::getValorCasoFalha() {
+inline std::string TUCodigoDeAgencia::getValorCasoFalha() {
     return "0000";
 };
 

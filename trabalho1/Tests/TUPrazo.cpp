@@ -31,7 +31,7 @@ bool TUPrazo::testarCenarioSucesso() {
 }
 
 bool TUPrazo::testarCenarioFalha() {
-    string valorInicial = this->instancia->getValor();
+    int valorInicial = this->instancia->getValor();
 
     try {
         // Tenta-se definir o valor inválido na instância.

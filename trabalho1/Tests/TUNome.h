@@ -21,6 +21,7 @@ class TUNome : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
 
 // Texto composto por 5 a 30 caracteres onde cada caracter pode ser letra (A-Z ou a-z) ou

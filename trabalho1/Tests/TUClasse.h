@@ -21,7 +21,12 @@ class TUClasse : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
+
+inline std::string TUClasse::getNomeUnidade() {
+    return "Classe";
+}
 
 inline std::string TUClasse::getValorDefault() {
     return "CDB";

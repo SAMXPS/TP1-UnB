@@ -1,25 +1,20 @@
 #include "ValorDeAplicacao.h"
-#include <string>
 using namespace std;
 
 // Implementação por Samuel James
 
-ValorDeAplicacao::ValorDeAplicacao(string valor) {
+ValorDeAplicacao::ValorDeAplicacao(double valor) {
 	ValorDeAplicacao::validate(valor);
 	this->valor = valor;
 }
 
-void ValorDeAplicacao::validate(string valor) throw(invalid_argument) {
-	// TODO: Implementar função de validação
-	if(valor.size() != tamanho){
-        throw invalid_argument("O tamanho do codigo esta errado");
-	}
-	if(valor == "0000"){
-        throw invalid_argument("O codigo nao pode ser 0000");
-	}
+void ValorDeAplicacao::validate(double valor) throw(invalid_argument) {
+	// Valor na faixa de 0 a 1.000.000,00 (reais).
+	if (valor < 0) 			throw(invalid_argument("Valor de Aplicacao nao pode ser negativo."));
+	if (valor > 1000000.0) 	throw(invalid_argument("Valor de Aplicacao muito grande."));
 }
 
-void ValorDeAplicacao::setValor(string valor) {
+void ValorDeAplicacao::setValor(double valor) {
 	ValorDeAplicacao::validate(valor);
 	this->valor = valor;
 }

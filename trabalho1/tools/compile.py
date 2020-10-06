@@ -3,22 +3,22 @@ import os
 dominios = [
     "CEP",
     "Classe",
-    "CodigoDeAgencia",
+    #"CodigoDeAgencia",
     "CodigoDeAplicacao",
-    "CodigoDeBanco",
+    #"CodigoDeBanco",
     "CodigoDeProduto",
-    "CPF",
-    "Data",
-    "Emissor",
-    "Endereco",
-    "Horario",
-    "Nome",
-    "Numero",
+    #"CPF",
+    #"Data",
+    #"Emissor",
+    #"Endereco",
+    #"Horario",
+    #"Nome",
+    #"Numero",
     "Prazo",
-    "Senha",
-    "Taxa",
+    #"Senha",
+    #"Taxa",
     "ValorDeAplicacao",
-    "ValorMinimo",
+    #"ValorMinimo",
 ]
 
 def geraComando():
@@ -67,5 +67,5 @@ def processaMain():
 
 if (processaMain()):
     print("opa")
-    #os.system(geraComando())
+    os.system(geraComando())
 

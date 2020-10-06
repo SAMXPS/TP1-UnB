@@ -10,18 +10,18 @@
 class Prazo {
 	
     private:
-		std::string valor;
+		int valor;
 
 		/**
 		 * TODO: Explicar como funciona a validação da classe
 		 */
-        static void validate(std::string valor) throw(std::invalid_argument);
+        static void validate(int valor) throw(std::invalid_argument);
 		
     public:
 		/**
 		 * Método construtor da classe Prazo
 		 */
-		Prazo(std::string valor);
+		Prazo(int valor);
 		
 		/**
 		 * Método setter: 
@@ -29,19 +29,19 @@ class Prazo {
 		 *  - Se for inválido, lança exceção;
 		 *  - Se for válido, atribui o valor ao atributo do objeto de classe.
 		 */
-		void setValor(std::string valor);
+		void setValor(int valor);
 		
 		/**
 		 * Método getter: 
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
-		const std::string getValor();
+		const int getValor();
 };
 
 /**
  * Implementação de método getter inline
  */
-inline const std::string Prazo::getValor() {
+inline const int Prazo::getValor() {
 	return valor;
 }
 

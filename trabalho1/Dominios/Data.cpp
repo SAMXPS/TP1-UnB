@@ -9,7 +9,11 @@ Data::Data(string valor) {
 }
 
 void Data::validate(string valor) throw(invalid_argument) {
-	// TODO: Implementar função de validação
+	// Formato DD/MM/AAAA onde DD é número de 1 e 31. MM é número de 1 e 12. AAAA é
+	// número de 2020 a 2099. O valor da data deve considerar a ocorrência de anos que sejam
+	// bissextos
+	
+
 }
 
 void Data::setValor(string valor) {

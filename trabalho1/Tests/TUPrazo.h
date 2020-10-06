@@ -21,9 +21,12 @@ class TUPrazo : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
 
-// Valor 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66 ou 72 (mêses).
+inline std::string TUPrazo::getNomeUnidade() {
+    return "Prazo";
+}
 
 inline int TUPrazo::getValorDefault() {
     return 6;

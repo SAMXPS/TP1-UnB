@@ -21,7 +21,12 @@ class TUCodigoDeAplicacao : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
+
+inline std::string TUCodigoDeAplicacao::getNomeUnidade() {
+    return "CodigoDeAplicacao";
+}
 
 inline std::string TUCodigoDeAplicacao::getValorDefault() {
     return "99999";

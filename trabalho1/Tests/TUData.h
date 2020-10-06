@@ -21,6 +21,7 @@ class TUData : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
 
 // Critério de cobertura:
