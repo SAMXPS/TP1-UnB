@@ -2,7 +2,7 @@
 #include <cctype>
 using namespace std;
 
-// Implementação por Lucas Aquino
+// Implementaï¿½ï¿½o por Lucas Aquino
 
 Emissor::Emissor(string valor) {
 	Emissor::validate(valor);
@@ -17,9 +17,12 @@ void Emissor::validate(string valor) throw(invalid_argument) {
 	if(!isupper(valor[0])){
         throw invalid_argument("O emissor deve comecar com letra, e ela deve ser maiscula");
 	}
+
+	const char* str = valor.c_str();
+	
 	for(int i = 0; i < 30; ++i){
-        if(valor[i] == '.' || valor[i] == '-' || valor[i] == ' '){
-            if(valor[i + 1] == '.' || valor[i + 1] == '-' || valor[i + 1] == ' '){
+        if(str[i] == '.' || str[i] == '-' || str[i] == ' '){
+            if(str[i + 1] == '.' || str[i + 1] == '-' || str[i + 1] == ' '){
                 throw invalid_argument("O emissor foi escrito de forma invalida");
             }
         }
