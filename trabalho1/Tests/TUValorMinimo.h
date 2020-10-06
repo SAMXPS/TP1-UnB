@@ -24,7 +24,7 @@ class TUValorMinimo : public TU {
         std::string getNomeUnidade();
 };
 
-inline std::string TUCEP::getNomeUnidade() {
+inline std::string TUValorMinimo::getNomeUnidade() {
     return "ValorMinimo";
 }
 

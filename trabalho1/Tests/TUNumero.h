@@ -24,7 +24,7 @@ class TUNumero : public TU {
         std::string getNomeUnidade();
 };
 
-inline std::string TUCEP::getNomeUnidade() {
+inline std::string TUNumero::getNomeUnidade() {
     return "Numero";
 }
 

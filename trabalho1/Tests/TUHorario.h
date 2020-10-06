@@ -24,7 +24,7 @@ class TUHorario : public TU {
         std::string getNomeUnidade();
 };
 
-inline std::string TUCEP::getNomeUnidade() {
+inline std::string TUHorario::getNomeUnidade() {
     return "Horario";
 }
 
