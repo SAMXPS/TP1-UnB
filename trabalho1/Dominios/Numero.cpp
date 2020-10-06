@@ -22,7 +22,7 @@ void Numero::validate(string valor) throw(invalid_argument){
         multiplicador--;
     }
     digito = somador % 11;
-    if(digito == 10 && valor[7] != "x"){
+    if(digito == 10 && (valor[7] - '0') != 0){
         throw invalid_argument("O digito nao esta correto");
     }
     if(digito == 1 && (valor[7] - '0') != 0){
