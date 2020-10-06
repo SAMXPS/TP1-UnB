@@ -21,8 +21,12 @@ class TUEmissor : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
 
+inline std::string TUEmissor::getNomeUnidade() {
+    return "Emissor";
+};
 inline std::string TUEmissor::getValorDefault() {
     return "Padrao";
 };

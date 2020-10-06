@@ -21,6 +21,11 @@ class TUCodigoDeBanco : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
+};
+
+inline std::string TUCodigoDeBanco::getNomeUnidade() {
+    return "CodigoDeBanco";
 };
 
 inline std::string TUCodigoDeBanco::getValorDefault() {

@@ -26,7 +26,7 @@ class TUCEP : public TU {
 
 inline std::string TUCEP::getNomeUnidade() {
     return "CEP";
-}
+};
 
 inline long TUCEP::getValorDefault() {
     return 20000001L;

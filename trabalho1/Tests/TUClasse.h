@@ -26,7 +26,7 @@ class TUClasse : public TU {
 
 inline std::string TUClasse::getNomeUnidade() {
     return "Classe";
-}
+};
 
 inline std::string TUClasse::getValorDefault() {
     return "CDB";

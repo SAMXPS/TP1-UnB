@@ -21,6 +21,11 @@ class TUCPF : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
+};
+
+inline std::string TUCPF::getNomeUnidade() {
+    return "CPF";
 };
 
 inline std::string TUCPF::getValorDefault() {
