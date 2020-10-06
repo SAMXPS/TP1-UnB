@@ -21,7 +21,12 @@ class TUHorario : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
+
+inline std::string TUCEP::getNomeUnidade() {
+    return "Horario";
+}
 
 inline std::string TUHorario::getValorDefault() {
     return "13:00";

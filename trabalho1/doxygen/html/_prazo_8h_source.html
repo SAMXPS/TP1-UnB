@@ -94,34 +94,34 @@ $(document).ready(function(){initNavTree('_prazo_8h_source.html',''); initResiza
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_prazo.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_prazo.html">Prazo</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                std::string valor;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                <span class="keywordtype">int</span> valor;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validate(std::string valor) <span class="keywordflow">throw</span>(std::invalid_argument);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validate(<span class="keywordtype">int</span> valor) <span class="keywordflow">throw</span>(std::invalid_argument);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="class_prazo.html#ad9a7111f19d7fe877eb23f461b56e3df">Prazo</a>(std::string valor);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="class_prazo.html#a89ce3ecc1c02f2984ed1e5bb0356d7d5">Prazo</a>(<span class="keywordtype">int</span> valor);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_prazo.html#a73a73675aa5a19e62faa7c87ba033866">setValor</a>(std::string valor);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_prazo.html#a6bbd23bb220141aeffcb13fbbc4a0f31">setValor</a>(<span class="keywordtype">int</span> valor);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">const</span> std::string <a class="code" href="class_prazo.html#a6b4bf94840ae7be9b327e98eebafc1dd">getValor</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_prazo.html#a9949e01d9337f676ff71a0afd0cd1577">getValor</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_prazo.html#a6b4bf94840ae7be9b327e98eebafc1dd">   44</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::string <a class="code" href="class_prazo.html#a6b4bf94840ae7be9b327e98eebafc1dd">Prazo::getValor</a>() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_prazo.html#a9949e01d9337f676ff71a0afd0cd1577">   44</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_prazo.html#a9949e01d9337f676ff71a0afd0cd1577">Prazo::getValor</a>() {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> valor;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // PRAZO_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_prazo_html_a6b4bf94840ae7be9b327e98eebafc1dd"><div class="ttname"><a href="class_prazo.html#a6b4bf94840ae7be9b327e98eebafc1dd">Prazo::getValor</a></div><div class="ttdeci">const std::string getValor()</div><div class="ttdef"><b>Definition:</b> Prazo.h:44</div></div>
-<div class="ttc" id="aclass_prazo_html_ad9a7111f19d7fe877eb23f461b56e3df"><div class="ttname"><a href="class_prazo.html#ad9a7111f19d7fe877eb23f461b56e3df">Prazo::Prazo</a></div><div class="ttdeci">Prazo(std::string valor)</div><div class="ttdef"><b>Definition:</b> Prazo.cpp:6</div></div>
-<div class="ttc" id="aclass_prazo_html_a73a73675aa5a19e62faa7c87ba033866"><div class="ttname"><a href="class_prazo.html#a73a73675aa5a19e62faa7c87ba033866">Prazo::setValor</a></div><div class="ttdeci">void setValor(std::string valor)</div><div class="ttdef"><b>Definition:</b> Prazo.cpp:15</div></div>
+<div class="ttc" id="aclass_prazo_html_a9949e01d9337f676ff71a0afd0cd1577"><div class="ttname"><a href="class_prazo.html#a9949e01d9337f676ff71a0afd0cd1577">Prazo::getValor</a></div><div class="ttdeci">const int getValor()</div><div class="ttdef"><b>Definition:</b> Prazo.h:44</div></div>
 <div class="ttc" id="aclass_prazo_html"><div class="ttname"><a href="class_prazo.html">Prazo</a></div><div class="ttdef"><b>Definition:</b> Prazo.h:10</div></div>
+<div class="ttc" id="aclass_prazo_html_a89ce3ecc1c02f2984ed1e5bb0356d7d5"><div class="ttname"><a href="class_prazo.html#a89ce3ecc1c02f2984ed1e5bb0356d7d5">Prazo::Prazo</a></div><div class="ttdeci">Prazo(int valor)</div><div class="ttdef"><b>Definition:</b> Prazo.cpp:6</div></div>
+<div class="ttc" id="aclass_prazo_html_a6bbd23bb220141aeffcb13fbbc4a0f31"><div class="ttname"><a href="class_prazo.html#a6bbd23bb220141aeffcb13fbbc4a0f31">Prazo::setValor</a></div><div class="ttdeci">void setValor(int valor)</div><div class="ttdef"><b>Definition:</b> Prazo.cpp:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ccc565b5f8366aa93dd1de15c96cd2bd.html">Dominios</a></li><li class="navelem"><b>Prazo.h</b></li>
-    <li class="footer">Generated on Tue Oct 6 2020 17:18:31 for trabalho1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Tue Oct 6 2020 18:33:59 for trabalho1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

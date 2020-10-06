@@ -21,7 +21,12 @@ class TUNumero : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
+
+inline std::string TUCEP::getNomeUnidade() {
+    return "Numero";
+}
 
 inline std::string TUNumero::getValorDefault() {
     // TODO: Preencher valor
