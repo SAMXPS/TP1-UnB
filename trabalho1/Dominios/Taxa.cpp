@@ -3,16 +3,18 @@ using namespace std;
 
 // Implementação por Samuel James
 
-Taxa::Taxa(string valor) {
+Taxa::Taxa(double valor) {
 	Taxa::validate(valor);
 	this->valor = valor;
 }
 
-void Taxa::validate(string valor) throw(invalid_argument) {
-	// TODO: Implementar função de validação
+void Taxa::validate(double valor) throw(invalid_argument) {
+	//Valor na faixa de 0 a 200 (% ao ano).
+
+	
 }
 
-void Taxa::setValor(string valor) {
+void Taxa::setValor(double valor) {
 	Taxa::validate(valor);
 	this->valor = valor;
 }
