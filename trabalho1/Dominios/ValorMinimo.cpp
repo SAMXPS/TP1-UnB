@@ -1,6 +1,8 @@
 #include "ValorMinimo.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 ValorMinimo::ValorMinimo(int valor) {
 	ValorMinimo::validate(valor);
 	this->valor = valor;

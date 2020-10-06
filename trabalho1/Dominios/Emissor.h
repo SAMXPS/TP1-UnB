@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Emissor tem como objetivo de indentificar
+ * a emissora do produto de investimento
  */
 class Emissor {
 
@@ -15,7 +16,8 @@ class Emissor {
 		static const int minimo = 5;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A função validate confere o tamanho máximo e mínimo do emissor, confere se o caracter -, espaço ou ponto não estão em sequência e
+		 * verifica se o primeiro caracter é letra, e se a mesma é maiúscula. Caso ele falhe em algum desses casos, é lançada a execeção
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 

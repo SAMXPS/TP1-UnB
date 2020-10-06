@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Horário tem como objetivo de indentificar
+ * o horário limite para aplicação no produto de investimento
  */
 class Horario {
 
@@ -16,7 +17,8 @@ class Horario {
 		static const int minimo = 7;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Essa validação confere se está no formato adequado com o caracter ":" entre os 4 dígitos, confere se está no
+		 * intervalo de 13:00 a 17:00. Caso ele falhe em algum desses casos, é lançada a execeção
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 

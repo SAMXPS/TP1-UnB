@@ -1,6 +1,8 @@
 #include "Senha.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 Senha::Senha(string valor) {
 	Senha::validate(valor);
 	this->valor = valor;

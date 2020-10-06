@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Número tem como objetivo de indentificar
+ * o número da conta do cliente
  */
 class Numero {
 
@@ -14,7 +15,11 @@ class Numero {
 		static const int tamanho = 8;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A função validate irá verifica o tamanho do número da conta, o formato e o dígito verificador.
+		 * Para verificar o dígito verificador é necessário fazer uma conta chamada de módulo 11.
+		 * Essa conta multiplica todos os 6 primeiros dígitos por pesos de 7 a 2, onde cada peso irá multiplicar somente um dígito
+		 * e comecará da esquerda indo para a direita, e começando pelo 7. Depois disso faz o módulo da soma das multiplicações por 11, e assim
+		 * encotra-se o digito verificador e compara com o dígito recebido. Caso ele falhe em algum desses casos, é lançada a execeção
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 

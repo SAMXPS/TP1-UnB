@@ -5,16 +5,20 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Código de banco tem como objetivo de indentificar
+ * o Código de banco do cliente
+ *
  */
 class CodigoDeBanco {
 
     private:
 		std::string valor;
 		static const int tamanho = 3;
-		
+
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A função "validate" confere se o Codigo de banco corresponde aos códigos dos
+		 * 5 maiores bancos do brasileiros por ativos totais. Os códigos são
+		 * "341", "001", "394", "104", "033". Caso o valor informado esteja fora desses casos, a execeção é lançada
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 

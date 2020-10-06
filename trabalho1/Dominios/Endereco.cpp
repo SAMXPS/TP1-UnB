@@ -1,6 +1,8 @@
 #include "Endereco.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 Endereco::Endereco(std::string valor) {
 	Endereco::validate(valor);
 	this->valor = valor;

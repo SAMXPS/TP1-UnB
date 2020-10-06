@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Valor Mínimo tem como objetivo analizar
+ * o valor mínimo para aplicações de prodito de investimento
  */
 class ValorMinimo {
 
@@ -13,7 +14,8 @@ class ValorMinimo {
 		int valor;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A função validate irá conferir se esse valor mínimo corresponde aos valores passados no
+		 * trabalho, esse valores são:  1.000,00, 5.000,00, 10.000 ou 50.000,00 (reais)
 		 */
         static void validate(int valor) throw(std::invalid_argument);
 

@@ -2,6 +2,8 @@
 #include <cctype>
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 Emissor::Emissor(string valor) {
 	Emissor::validate(valor);
 	this->valor = valor;

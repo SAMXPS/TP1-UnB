@@ -2,6 +2,8 @@
 #include <ctype.h>
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 CPF::CPF(string valor) {
 	CPF::validate(valor);
 	this->valor = valor;

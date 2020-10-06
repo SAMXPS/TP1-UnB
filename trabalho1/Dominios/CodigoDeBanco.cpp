@@ -1,6 +1,8 @@
 #include "CodigoDeBanco.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 CodigoDeBanco::CodigoDeBanco(string valor) {
 	CodigoDeBanco::validate(valor);
 	this->valor = valor;

@@ -1,6 +1,8 @@
 #include "Horario.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 Horario::Horario(string valor) {
 	Horario::validate(valor);
 	this->valor = valor;
@@ -12,6 +14,9 @@ void Horario::validate(string valor) throw(invalid_argument) {
 	}
 	if(valor[2] != ':'){
         throw invalid_argument("O horario nao esta no formato correto");
+	}
+	if((valor[0] - '0') != 1){
+        throw invalid_argument("O horario nao esta no intervalo permitido");
 	}
 	if((valor[1]- '0') < minimo){
         throw invalid_argument("O horario esta abaixo das 13:00");

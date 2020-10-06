@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Domínio Senha tem como objetivo de indentificar
+ * e armazenar a senha fornecida pelo cliente
  */
 class Senha {
 
@@ -14,7 +15,8 @@ class Senha {
 		static const int tamanho = 6;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A função validate irá verificar se a senha está de acordo com o tamanho padrão, e se ela contem números repitidos.
+         * Caso ela falhe em algum desses casos, é lançada a execeção.
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 

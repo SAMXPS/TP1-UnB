@@ -1,6 +1,8 @@
 #include "Numero.h"
 using namespace std;
 
+// Implementação por Lucas Aquino
+
 Numero::Numero(string valor) {
 	Numero::validate(valor);
 	this->valor = valor;
@@ -13,14 +15,22 @@ void Numero::validate(string valor) throw(invalid_argument){
 	if(valor[6] != '-'){//o formato do numero esta errado de acordo com o trabalho
         throw invalid_argument("O numero nao esta no formato correto");
 	}
-	int soma = 0,  verificador = 0;
-	for(int i = 0; i < 6 ; i++){//Faz a soma de todos o X digitos
-        soma += valor[i];
-	}
-	verificador = soma % 4;//Pega o resto da divisao por 4 para transformar em digito verificador
-	if(verificador != valor[7]){
-        throw invalid_argument("O digito verificador nao eh valido");
-	}
+    int digito, somador = 0;
+    int multiplicador  = 7;
+    for(int i = 0; i < 6; i++){
+        somador += valor[i] * multiplicador;
+        multiplicador--;
+    }
+    digito = somador % 11;
+    if(digito == 10 && valor[7] != "x"){
+        throw invalid_argument("O digito nao esta correto");
+    }
+    if(digito == 1 && (valor[7] - '0') != 0){
+        throw invalid_argument("O digito nao esta correto");
+    }
+    if(digito != (valor[7] - '0')){
+        throw invalid_argument("O digito nao esta correto");
+    }
 }
 
 void Numero::setValor(string valor) {
