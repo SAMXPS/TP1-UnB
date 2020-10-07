@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="trabalho1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Headers/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/trabalho1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/trabalho1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Dominios/CEP.cpp" />
+		<Unit filename="Dominios/CEP.h" />
+		<Unit filename="Dominios/CPF.cpp" />
+		<Unit filename="Dominios/CPF.h" />
+		<Unit filename="Dominios/Classe.cpp" />
+		<Unit filename="Dominios/Classe.h" />
+		<Unit filename="Dominios/CodigoDeAgencia.cpp" />
+		<Unit filename="Dominios/CodigoDeAgencia.h" />
+		<Unit filename="Dominios/CodigoDeAplicacao.cpp" />
+		<Unit filename="Dominios/CodigoDeAplicacao.h" />
+		<Unit filename="Dominios/CodigoDeBanco.cpp" />
+		<Unit filename="Dominios/CodigoDeBanco.h" />
+		<Unit filename="Dominios/CodigoDeProduto.cpp" />
+		<Unit filename="Dominios/CodigoDeProduto.h" />
+		<Unit filename="Dominios/Data.cpp" />
+		<Unit filename="Dominios/Data.h" />
+		<Unit filename="Dominios/Emissor.cpp" />
+		<Unit filename="Dominios/Emissor.h" />
+		<Unit filename="Dominios/Endereco.cpp" />
+		<Unit filename="Dominios/Endereco.h" />
+		<Unit filename="Dominios/Horario.cpp" />
+		<Unit filename="Dominios/Horario.h" />
+		<Unit filename="Dominios/Nome.cpp" />
+		<Unit filename="Dominios/Nome.h" />
+		<Unit filename="Dominios/Numero.cpp" />
+		<Unit filename="Dominios/Numero.h" />
+		<Unit filename="Dominios/Prazo.cpp" />
+		<Unit filename="Dominios/Prazo.h" />
+		<Unit filename="Dominios/Senha.cpp" />
+		<Unit filename="Dominios/Senha.h" />
+		<Unit filename="Dominios/Taxa.cpp" />
+		<Unit filename="Dominios/Taxa.h" />
+		<Unit filename="Dominios/ValorDeAplicacao.cpp" />
+		<Unit filename="Dominios/ValorDeAplicacao.h" />
+		<Unit filename="Dominios/ValorMinimo.cpp" />
+		<Unit filename="Dominios/ValorMinimo.h" />
+		<Unit filename="Tests/ResultadoTU.h" />
+		<Unit filename="Tests/TUCEP.cpp" />
+		<Unit filename="Tests/TUCEP.h" />
+		<Unit filename="Tests/TUCPF.cpp" />
+		<Unit filename="Tests/TUCPF.h" />
+		<Unit filename="Tests/TUClasse.cpp" />
+		<Unit filename="Tests/TUClasse.h" />
+		<Unit filename="Tests/TUCodigoDeAgencia.cpp" />
+		<Unit filename="Tests/TUCodigoDeAgencia.h" />
+		<Unit filename="Tests/TUCodigoDeAplicacao.cpp" />
+		<Unit filename="Tests/TUCodigoDeAplicacao.h" />
+		<Unit filename="Tests/TUCodigoDeBanco.cpp" />
+		<Unit filename="Tests/TUCodigoDeBanco.h" />
+		<Unit filename="Tests/TUCodigoDeProduto.cpp" />
+		<Unit filename="Tests/TUCodigoDeProduto.h" />
+		<Unit filename="Tests/TUData.cpp" />
+		<Unit filename="Tests/TUData.h" />
+		<Unit filename="Tests/TUEmissor.cpp" />
+		<Unit filename="Tests/TUEmissor.h" />
+		<Unit filename="Tests/TUEndereco.cpp" />
+		<Unit filename="Tests/TUEndereco.h" />
+		<Unit filename="Tests/TUHorario.cpp" />
+		<Unit filename="Tests/TUHorario.h" />
+		<Unit filename="Tests/TUNome.cpp" />
+		<Unit filename="Tests/TUNome.h" />
+		<Unit filename="Tests/TUNumero.cpp" />
+		<Unit filename="Tests/TUNumero.h" />
+		<Unit filename="Tests/TUPrazo.cpp" />
+		<Unit filename="Tests/TUPrazo.h" />
+		<Unit filename="Tests/TUSenha.cpp" />
+		<Unit filename="Tests/TUSenha.h" />
+		<Unit filename="Tests/TUTaxa.cpp" />
+		<Unit filename="Tests/TUTaxa.h" />
+		<Unit filename="Tests/TUValorDeAplicacao.cpp" />
+		<Unit filename="Tests/TUValorDeAplicacao.h" />
+		<Unit filename="Tests/TUValorMinimo.cpp" />
+		<Unit filename="Tests/TUValorMinimo.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_language="Portuguese" />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

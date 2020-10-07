@@ -1,0 +1,43 @@
+#ifndef TUCODIGODEPRODUTO_H_INCLUDED
+#define TUCODIGODEPRODUTO_H_INCLUDED
+
+#include "TU.h"
+#include "ResultadoTU.h"
+#include "../Dominios/CodigoDeProduto.h" 
+
+class TUCodigoDeProduto : public TU {        
+    private:
+        CodigoDeProduto* instancia;
+
+        bool configurar();
+        bool testarCenarioSucesso();
+        bool testarCenarioFalha();
+        void terminar();
+        
+    protected:
+        std::string getValorDefault();
+        std::string getValorCasoFalha();
+        std::string getValorCasoSucesso();
+
+    public:
+        ResultadoTU testar();
+        std::string getNomeUnidade();
+};
+
+inline std::string TUCodigoDeProduto::getNomeUnidade() {
+    return "CodigoDeProduto";
+}
+
+inline std::string TUCodigoDeProduto::getValorDefault() {
+    return "001";
+};
+
+inline std::string TUCodigoDeProduto::getValorCasoSucesso() {
+    return "123";
+};
+
+inline std::string TUCodigoDeProduto::getValorCasoFalha() {
+    return "000";
+};
+
+#endif // TUCODIGODEPRODUTO_H_INCLUDED

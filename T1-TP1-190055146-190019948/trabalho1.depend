@@ -1,0 +1,306 @@
+# depslib dependency file v1.0
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\main.cpp
+	<iostream>
+	"Tests/TUCEP.h"
+
+1600537997 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios.cpp
+	"dominios.h"
+	<string>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1600539113 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios.h
+	<string>
+	<iostream>
+
+1600290658 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios.cpp
+	"dominios.h"
+	<string>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\cep.cpp
+	"CEP.h"
+
+1601636715 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\cep.h
+	<stdexcept>
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\classe.cpp
+	"Classe.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\classe.h
+	<string>
+	<stdexcept>
+
+1601932994 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeagencia.cpp
+	"CodigoDeAgencia.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeagencia.h
+	<string>
+	<stdexcept>
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeaplicacao.cpp
+	"CodigoDeAplicacao.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeaplicacao.h
+	<string>
+	<stdexcept>
+
+1602015938 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodebanco.cpp
+	"CodigoDeBanco.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodebanco.h
+	<string>
+	<stdexcept>
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeproduto.cpp
+	"CodigoDeProduto.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\codigodeproduto.h
+	<string>
+	<stdexcept>
+
+1602034366 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\cpf.cpp
+	"CPF.h"
+	<ctype.h>
+	<iostream>
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\cpf.h
+	<string>
+	<stdexcept>
+
+1602029644 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\data.cpp
+	"Data.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\data.h
+	<string>
+	<stdexcept>
+
+1602033225 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\emissor.cpp
+	"Emissor.h"
+	<cctype>
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\emissor.h
+	<string>
+	<stdexcept>
+
+1602032829 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\endereco.cpp
+	"Endereco.h"
+	<iostream>
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\endereco.h
+	<string>
+	<stdexcept>
+
+1602029645 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\horario.cpp
+	"Horario.h"
+
+1602029645 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\horario.h
+	<string>
+	<stdexcept>
+
+1602034230 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\nome.cpp
+	"Nome.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\nome.h
+	<string>
+	<stdexcept>
+
+1602035477 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\numero.cpp
+	"Numero.h"
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\numero.h
+	<string>
+	<stdexcept>
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\prazo.cpp
+	"Prazo.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\prazo.h
+	<string>
+	<stdexcept>
+
+1602015938 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\senha.cpp
+	"Senha.h"
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\senha.h
+	<string>
+	<stdexcept>
+
+1602034230 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\taxa.cpp
+	"Taxa.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\taxa.h
+	<string>
+	<stdexcept>
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\valordeaplicacao.cpp
+	"ValorDeAplicacao.h"
+
+1602034230 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\valordeaplicacao.h
+	<string>
+	<stdexcept>
+
+1602020922 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucep.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CEP.h"
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\resultadotu.h
+	<iostream>
+	<string>
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucep.cpp
+	"TUCEP.h"
+	<iostream>
+
+1602015938 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\valorminimo.cpp
+	"ValorMinimo.h"
+
+1602015938 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\dominios\valorminimo.h
+	<string>
+	<stdexcept>
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tu.h
+	"ResultadoTU.h"
+	<string>
+	<iostream>
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuclasse.cpp
+	"TUClasse.h"
+
+1602020922 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuclasse.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Classe.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeagencia.cpp
+	"TUCodigoDeAgencia.h"
+
+1602020922 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeagencia.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CodigoDeAgencia.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeaplicacao.cpp
+	"TUCodigoDeAplicacao.h"
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeaplicacao.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CodigoDeAplicacao.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodebanco.cpp
+	"TUCodigoDeBanco.h"
+
+1602020922 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodebanco.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CodigoDeBanco.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeproduto.cpp
+	"TUCodigoDeProduto.h"
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucodigodeproduto.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CodigoDeProduto.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucpf.cpp
+	"TUCPF.h"
+
+1602020922 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tucpf.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/CPF.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tudata.cpp
+	"TUData.h"
+
+1602029645 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tudata.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Data.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuemissor.cpp
+	"TUEmissor.h"
+
+1602029645 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuemissor.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Emissor.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuendereco.cpp
+	"TUEndereco.h"
+
+1602033133 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuendereco.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Endereco.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuhorario.cpp
+	"TUHorario.h"
+
+1602021178 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuhorario.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Horario.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tunome.cpp
+	"TUNome.h"
+
+1602029645 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tunome.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Nome.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tunumero.cpp
+	"TUNumero.h"
+
+1602021167 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tunumero.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Numero.h"
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuprazo.cpp
+	"TUPrazo.h"
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuprazo.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Prazo.h"
+
+1601408586 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tusenha.cpp
+	"TUSenha.h"
+
+1602021158 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tusenha.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Senha.h"
+
+1602029645 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tutaxa.cpp
+	"TUTaxa.h"
+
+1602029645 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tutaxa.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/Taxa.h"
+
+1602015886 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuvalordeaplicacao.cpp
+	"TUValorDeAplicacao.h"
+
+1602015886 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuvalordeaplicacao.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/ValorDeAplicacao.h"
+
+1602029645 source:c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuvalorminimo.cpp
+	"TUValorMinimo.h"
+
+1602021150 c:\users\laqui\onedrive\documentos\github\tp1-unb\trabalho1\tests\tuvalorminimo.h
+	"TU.h"
+	"ResultadoTU.h"
+	"../Dominios/ValorMinimo.h"
+
