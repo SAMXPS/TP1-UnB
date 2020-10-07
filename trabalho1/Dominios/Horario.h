@@ -13,8 +13,8 @@ class Horario {
     private:
 		std::string valor;
 		static const int tamanho = 5;
-		static const int maximo = 3;
-		static const int minimo = 7;
+		static const int maximo = 7;
+		static const int minimo = 3;
 
 		/**
 		 * Essa validação confere se está no formato adequado com o caracter ":" entre os 4 dígitos, confere se está no

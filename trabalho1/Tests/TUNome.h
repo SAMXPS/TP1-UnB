@@ -24,9 +24,9 @@ class TUNome : public TU {
         std::string getNomeUnidade();
 };
 
-// Texto composto por 5 a 30 caracteres onde cada caracter pode ser letra (A-Z ou a-z) ou
-// espaço, há pelo menos 5 letras, não há espaços em sequência, primeira letra de cada termo é
-// letra maiúscula.
+inline std::string TUNome::getNomeUnidade() {
+    return "Nome";
+};
 
 inline std::string TUNome::getValorDefault() {
     return "Samuel James";

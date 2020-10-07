@@ -21,9 +21,12 @@ class TUTaxa : public TU {
 
     public:
         ResultadoTU testar();
+        std::string getNomeUnidade();
 };
 
-// Valor na faixa de 0 a 200 (% ao ano).
+inline std::string TUTaxa::getNomeUnidade() {
+    return "Taxa";
+}
 
 inline double TUTaxa::getValorDefault() {
     return 10.0f;

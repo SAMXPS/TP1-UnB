@@ -1,7 +1,7 @@
 #include "Endereco.h"
 using namespace std;
 
-// Implementação por Lucas Aquino
+// ImplementaÃ§Ã£o por Lucas Aquino
 
 Endereco::Endereco(std::string valor) {
 	Endereco::validate(valor);
@@ -12,15 +12,19 @@ void Endereco::validate(std::string valor) throw (std::invalid_argument) {
 	int tamanho = valor.size();
 
 	if(tamanho < minimo || tamanho > maximo){
-        throw new std::invalid_argument("O emissor nao tem o tamanho padrao");
+        throw std::invalid_argument("O emissor nao tem o tamanho padrao");
 	}
-	if(!isupper(valor[0])){
-        throw new std::invalid_argument("O emissor deve comecar com letra, e ela deve ser maiscula");
+
+	const char* str = valor.c_str();
+
+	if(!isupper(str[0])){
+        throw std::invalid_argument("O emissor deve comecar com letra, e ela deve ser maiscula");
 	}
-	for(int i = 0; i < 30; ++i){
-        if(valor[i] == '.' || valor[i] == '-' || valor[i] == ' '){
-            if(valor[i + 1] == '.' || valor[i + 1] == '-' || valor[i + 1] == ' '){
-                throw new std::invalid_argument("O emissor foi escrito de forma invalida");
+
+	for(int i = 0; i < valor.length(); ++i){
+        if(str[i] == '.' || str[i] == '-' || str[i] == ' '){
+            if(str[i + 1] == '.' || str[i + 1] == '-' || str[i + 1] == ' '){
+                throw std::invalid_argument("O emissor foi escrito de forma invalida");
             }
         }
 	}

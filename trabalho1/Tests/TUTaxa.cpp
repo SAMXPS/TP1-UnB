@@ -31,7 +31,7 @@ bool TUTaxa::testarCenarioSucesso() {
 }
 
 bool TUTaxa::testarCenarioFalha() {
-    string valorInicial = this->instancia->getValor();
+    double valorInicial = this->instancia->getValor();
 
     try {
         // Tenta-se definir o valor inválido na instância.

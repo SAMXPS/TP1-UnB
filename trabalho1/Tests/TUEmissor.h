@@ -27,6 +27,7 @@ class TUEmissor : public TU {
 inline std::string TUEmissor::getNomeUnidade() {
     return "Emissor";
 };
+
 inline std::string TUEmissor::getValorDefault() {
     return "Padrao";
 };

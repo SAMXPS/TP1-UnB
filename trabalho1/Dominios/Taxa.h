@@ -10,18 +10,18 @@
 class Taxa {
 	
     private:
-		std::string valor;
+		double valor;
 		
 		/**
 		 * TODO: Explicar como funciona a validação da classe
 		 */
-        static void validate(std::string valor) throw(std::invalid_argument);
+        static void validate(double valor) throw(std::invalid_argument);
 		
     public:
 		/**
 		 * Método construtor da classe Taxa
 		 */
-		Taxa(std::string valor);
+		Taxa(double valor);
 		
 		/**
 		 * Método setter: 
@@ -29,19 +29,19 @@ class Taxa {
 		 *  - Se for inválido, lança exceção;
 		 *  - Se for válido, atribui o valor ao atributo do objeto de classe.
 		 */
-		void setValor(std::string valor);
+		void setValor(double valor);
 		
 		/**
 		 * Método getter: 
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
-		const std::string getValor();
+		const double getValor();
 };
 
 /**
  * Implementação de método getter inline
  */
-inline const std::string Taxa::getValor() {
+inline const double Taxa::getValor() {
 	return valor;
 }
 
