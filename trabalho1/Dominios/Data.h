@@ -5,7 +5,9 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Data é uma representação de dias, meses e anos.
+ * Leva em conta a ocorrencia de ans bissextos.
+ * No caso deste trabalho, está restringida aos ans 2020 a 2099.
  */
 class Data {
 	
@@ -13,7 +15,10 @@ class Data {
 		std::string valor;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Verifica-se as posições dos caracteres divisores.
+		 * Em seguida, verifica-se se todos os caracteres restantes são números.
+		 * Finalmente, converte-se cada parte da data em seu respectivo valor numérico.
+		 * É levado em conta a ocorrência de anos bissextos.
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 		
@@ -39,7 +44,7 @@ class Data {
 };
 
 /**
- * Implementação de método getter inline
+ * Implementação de método getter inline.
  */
 inline const std::string Data::getValor() {
 	return valor;

@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Taxa é um valor numérico, geralmente exposto em forma de porcentagem.
+ * Uma taxa, na maioria dos casos, está associada a uma proporção entre duas quantias.
  */
 class Taxa {
 	
@@ -13,13 +14,13 @@ class Taxa {
 		double valor;
 		
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Validação super simples: verifica-se que o valor é menor que 0 ou maior que 200.
 		 */
         static void validate(double valor) throw(std::invalid_argument);
 		
     public:
 		/**
-		 * Método construtor da classe Taxa
+		 * Método construtor da classe Taxa.
 		 */
 		Taxa(double valor);
 		

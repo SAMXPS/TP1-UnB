@@ -5,15 +5,16 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Valor de aplicação é um valor numérico referente a uma quantida de dinheiro que será aplicada.
  */
 class ValorDeAplicacao {
 
     private:
 		double valor;
         static const int tamanho = 5;
+
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Validação simples, comparação de valores numéricos por sintaxe de if.
 		 */
         static void validate(double valor) throw(std::invalid_argument);
 

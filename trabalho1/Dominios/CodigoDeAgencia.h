@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Código de Agência é um número que representa a agência bancária da conta do cliente.
+ * Cada agência possui um código distinto.
  */
 class CodigoDeAgencia {
 
@@ -14,7 +15,9 @@ class CodigoDeAgencia {
 		static const int tamanho = 4;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A validação é feita de forma simples.
+		 * Basicamente, verifica-se se a string tem tamanho 4.
+		 * Em seguida, verifica-se se todos os characteres são algarismos numéricos.
 		 */
         static void validate(std::string valor) throw (std::invalid_argument);
 

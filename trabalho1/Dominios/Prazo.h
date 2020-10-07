@@ -5,7 +5,7 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Prazo é uma quantidade númerica que se refere ao número de meses em que um investimento será aplicado.
  */
 class Prazo {
 	
@@ -13,7 +13,7 @@ class Prazo {
 		int valor;
 
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Validação feita de forma simples, por meio se sequência de comparações com os valores esperados.
 		 */
         static void validate(int valor) throw(std::invalid_argument);
 		

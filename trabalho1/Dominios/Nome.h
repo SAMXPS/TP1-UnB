@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Nome é uma sequência de caracteres, geralmente é associada a um substantivo composto,
+ * uma vez que sempre se inicia com letras maiúsculas.
  */
 class Nome {
 	
@@ -13,7 +14,10 @@ class Nome {
 		std::string valor;
 		
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * Validação feita de forma simples.
+		 * Primeiro, é verificado o tamanho da string.
+		 * Em seguida, verifica-se que todos valores são letras do alfabeto.
+		 * No caso de uma letra suceder um espaço, verifica-se se é maiúscula.
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 		
