@@ -21,7 +21,7 @@ void Endereco::validate(std::string valor) throw (std::invalid_argument) {
         throw std::invalid_argument("O emissor deve comecar com letra, e ela deve ser maiscula");
 	}
 
-	for(int i = 0; i < valor.size(); ++i){
+	for(int i = 0; i < valor.length(); ++i){
         if(str[i] == '.' || str[i] == '-' || str[i] == ' '){
             if(str[i + 1] == '.' || str[i + 1] == '-' || str[i + 1] == ' '){
                 throw std::invalid_argument("O emissor foi escrito de forma invalida");
