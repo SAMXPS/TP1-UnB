@@ -14,12 +14,16 @@ void Endereco::validate(std::string valor) throw (std::invalid_argument) {
 	if(tamanho < minimo || tamanho > maximo){
         throw std::invalid_argument("O emissor nao tem o tamanho padrao");
 	}
-	if(!isupper(valor[0])){
+
+	const char* str = valor.c_str();
+
+	if(!isupper(str[0])){
         throw std::invalid_argument("O emissor deve comecar com letra, e ela deve ser maiscula");
 	}
-	for(int i = 0; i < 30; ++i){
-        if(valor[i] == '.' || valor[i] == '-' || valor[i] == ' '){
-            if(valor[i + 1] == '.' || valor[i + 1] == '-' || valor[i + 1] == ' '){
+
+	for(int i = 0; i < valor.size(); ++i){
+        if(str[i] == '.' || str[i] == '-' || str[i] == ' '){
+            if(str[i + 1] == '.' || str[i + 1] == '-' || str[i + 1] == ' '){
                 throw std::invalid_argument("O emissor foi escrito de forma invalida");
             }
         }
