@@ -29,7 +29,7 @@ inline std::string TUEndereco::getNomeUnidade() {
 };
 
 inline std::string TUEndereco::getValorDefault() {
-    return "UnB";
+    return "CasoCerto";
 };
 
 inline std::string TUEndereco::getValorCasoSucesso() {
