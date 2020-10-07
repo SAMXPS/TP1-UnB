@@ -6,7 +6,7 @@
 
 /**
  * O Domínio Código de aplicação tem como objetivo indentificar
- * as aplicações em produtos de investimento
+ * as aplicações em produtos de investimento.
  */
 class CodigoDeAplicacao {
 

@@ -5,7 +5,7 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * O Código de Produto é um número que identifica individualmente cada produto de investimento.
  */
 class CodigoDeProduto {
 	
@@ -13,7 +13,9 @@ class CodigoDeProduto {
 		std::string valor;
 		
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A validação é feita de forma simples.
+		 * Basicamente, verifica-se se a string tem tamanho 3.
+		 * Em seguida, verifica-se se todos os characteres são algarismos numéricos.
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
 		

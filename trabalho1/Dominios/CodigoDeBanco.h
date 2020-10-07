@@ -6,7 +6,7 @@
 
 /**
  * O Domínio Código de banco tem como objetivo de indentificar
- * o Código de banco do cliente
+ * o Código de banco do cliente.
  *
  */
 class CodigoDeBanco {

@@ -10,8 +10,7 @@ Taxa::Taxa(double valor) {
 
 void Taxa::validate(double valor) throw(invalid_argument) {
 	//Valor na faixa de 0 a 200 (% ao ano).
-
-	
+	if (valor < 0 || valor > 200) throw invalid_argument("Taxa inválida");
 }
 
 void Taxa::setValor(double valor) {

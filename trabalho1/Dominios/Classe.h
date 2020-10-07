@@ -5,7 +5,8 @@
 #include <stdexcept>	// std::invalid_argument
 
 /**
- * TODO: Dar explicação resumida sobre a classe
+ * Representa o tipoo de investimento que será feito.
+ * Pode ser CDB, LCA, LCI, LF ou LC.
  */
 class Classe {
 	
@@ -13,7 +14,7 @@ class Classe {
 		std::string valor;
 		
 		/**
-		 * TODO: Explicar como funciona a validação da classe
+		 * A validação é feita de forma simples, apenas coomparando os valores de Strings.
 		 */
         static void validate(std::string valor) throw (std::invalid_argument);
 		

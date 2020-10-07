@@ -16,7 +16,7 @@ void Nome::validate(string valor) throw(invalid_argument) {
 
 	const int distanciaZA = 'z' - 'a';
 
-	bool ultimoEspaco = 0;
+	bool ultimoEspaco = true;
 	const char* str = valor.c_str();
 
 	for (char c; (c = *str) != 0; str++) {
