@@ -1,5 +1,6 @@
 var class_t_u_emissor =
 [
+    [ "getNomeUnidade", "class_t_u_emissor.html#a23ea0ca2400e4df40cb16b7048d25e97", null ],
     [ "getValorCasoFalha", "class_t_u_emissor.html#a70a3545ce3be79f6eade92abaf93adc0", null ],
     [ "getValorCasoSucesso", "class_t_u_emissor.html#a6f3cc7c031c5eb37a77ac974196868db", null ],
     [ "getValorDefault", "class_t_u_emissor.html#a0e2dc333af5acaafb38c89c3cfe10119", null ],

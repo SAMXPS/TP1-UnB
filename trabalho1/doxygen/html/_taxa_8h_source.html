@@ -91,37 +91,37 @@ $(document).ready(function(){initNavTree('_taxa_8h_source.html',''); initResizab
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span>               <span class="comment">// std::string</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span>    <span class="comment">// std::invalid_argument</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_taxa.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_taxa.html">Taxa</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                std::string valor;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validate(std::string valor) <span class="keywordflow">throw</span>(std::invalid_argument);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="class_taxa.html#af6d94e8ce8393c7ac7caecc2546919a5">Taxa</a>(std::string valor);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_taxa.html#a6a9b060375f9af55b3c7210615456d67">setValor</a>(std::string valor);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">const</span> std::string <a class="code" href="class_taxa.html#a4106c8f4d1faf7cedfa58cd7f3987384">getValor</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_taxa.html#a4106c8f4d1faf7cedfa58cd7f3987384">   44</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::string <a class="code" href="class_taxa.html#a4106c8f4d1faf7cedfa58cd7f3987384">Taxa::getValor</a>() {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> valor;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // TAXA_H_INCLUDED</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_taxa.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_taxa.html">Taxa</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="keywordtype">double</span> valor;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validate(<span class="keywordtype">double</span> valor) <span class="keywordflow">throw</span>(std::invalid_argument);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <a class="code" href="class_taxa.html#a3bc8b02b84d4781e0396c840dbb44c2e">Taxa</a>(<span class="keywordtype">double</span> valor);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_taxa.html#a6c0d277ce4aa92f344f68f642e77fbfb">setValor</a>(<span class="keywordtype">double</span> valor);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_taxa.html#a6c5742e5d5dc4e3f4e964c41063b9590">getValor</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_taxa.html#a6c5742e5d5dc4e3f4e964c41063b9590">   45</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_taxa.html#a6c5742e5d5dc4e3f4e964c41063b9590">Taxa::getValor</a>() {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> valor;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // TAXA_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_taxa_html"><div class="ttname"><a href="class_taxa.html">Taxa</a></div><div class="ttdef"><b>Definition:</b> Taxa.h:10</div></div>
-<div class="ttc" id="aclass_taxa_html_a6a9b060375f9af55b3c7210615456d67"><div class="ttname"><a href="class_taxa.html#a6a9b060375f9af55b3c7210615456d67">Taxa::setValor</a></div><div class="ttdeci">void setValor(std::string valor)</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:15</div></div>
-<div class="ttc" id="aclass_taxa_html_af6d94e8ce8393c7ac7caecc2546919a5"><div class="ttname"><a href="class_taxa.html#af6d94e8ce8393c7ac7caecc2546919a5">Taxa::Taxa</a></div><div class="ttdeci">Taxa(std::string valor)</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:6</div></div>
-<div class="ttc" id="aclass_taxa_html_a4106c8f4d1faf7cedfa58cd7f3987384"><div class="ttname"><a href="class_taxa.html#a4106c8f4d1faf7cedfa58cd7f3987384">Taxa::getValor</a></div><div class="ttdeci">const std::string getValor()</div><div class="ttdef"><b>Definition:</b> Taxa.h:44</div></div>
+<div class="ttc" id="aclass_taxa_html"><div class="ttname"><a href="class_taxa.html">Taxa</a></div><div class="ttdef"><b>Definition:</b> Taxa.h:11</div></div>
+<div class="ttc" id="aclass_taxa_html_a6c0d277ce4aa92f344f68f642e77fbfb"><div class="ttname"><a href="class_taxa.html#a6c0d277ce4aa92f344f68f642e77fbfb">Taxa::setValor</a></div><div class="ttdeci">void setValor(double valor)</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:16</div></div>
+<div class="ttc" id="aclass_taxa_html_a3bc8b02b84d4781e0396c840dbb44c2e"><div class="ttname"><a href="class_taxa.html#a3bc8b02b84d4781e0396c840dbb44c2e">Taxa::Taxa</a></div><div class="ttdeci">Taxa(double valor)</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:6</div></div>
+<div class="ttc" id="aclass_taxa_html_a6c5742e5d5dc4e3f4e964c41063b9590"><div class="ttname"><a href="class_taxa.html#a6c5742e5d5dc4e3f4e964c41063b9590">Taxa::getValor</a></div><div class="ttdeci">const double getValor()</div><div class="ttdef"><b>Definition:</b> Taxa.h:45</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ccc565b5f8366aa93dd1de15c96cd2bd.html">Dominios</a></li><li class="navelem"><b>Taxa.h</b></li>
-    <li class="footer">Generated on Tue Oct 6 2020 18:33:59 for trabalho1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Tue Oct 6 2020 22:43:14 for trabalho1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
