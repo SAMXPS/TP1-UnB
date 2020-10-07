@@ -19,8 +19,8 @@ void Emissor::validate(string valor) throw(invalid_argument) {
 	}
 
 	const char* str = valor.c_str();
-	
-	for(int i = 0; i < valor.length(); ++i){
+
+	for(int i = 0; i+1 < valor.length(); ++i){
         if(str[i] == '.' || str[i] == '-' || str[i] == ' '){
             if(str[i + 1] == '.' || str[i + 1] == '-' || str[i + 1] == ' '){
                 throw invalid_argument("O emissor foi escrito de forma invalida");
