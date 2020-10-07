@@ -1,7 +1,7 @@
 #include "Horario.h"
 using namespace std;
 
-// Implementação por Lucas Aquino
+// ImplementaÃ§Ã£o por Lucas Aquino
 
 Horario::Horario(string valor) {
 	Horario::validate(valor);
@@ -12,19 +12,22 @@ void Horario::validate(string valor) throw(invalid_argument) {
 	if(valor.size() != tamanho){
         throw invalid_argument("O horario nao tem o tamanho padrao");
 	}
-	if(valor[2] != ':'){
+
+	const char* str = valor.c_str();
+
+	if(str[2] != ':'){
         throw invalid_argument("O horario nao esta no formato correto");
 	}
-	if((valor[0] - '0') != 1){
+	if((str[0] - '0') != 1){
         throw invalid_argument("O horario nao esta no intervalo permitido");
 	}
-	if((valor[1]- '0') < minimo){
+	if((str[1]- '0') < minimo){
         throw invalid_argument("O horario esta abaixo das 13:00");
 	}
-	if((valor[1] - '0') > maximo){
+	if((str[1] - '0') > maximo){
         throw invalid_argument("O horario esta acima das 17:00");
 	}
-	if((valor[1] - '0') == maximo && ((valor[3]) - '0') != 0 || (valor[4] - '0') != 0){
+	if((str[1] - '0') == maximo && ((str[3]) - '0') != 0 || (str[4] - '0') != 0){
         throw invalid_argument("O horario esta acima das 17:00");
 	}
 }
