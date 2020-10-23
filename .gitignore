@@ -1,4 +1,8 @@
 
 .vscode/settings.json
-trabalho1/.vscode/settings.json
-trabalho1/trabalho1.layout
+obj/*
+*.depend
+bin/
+tools/out/*
+trabalho2.layout
+old_tools/*
