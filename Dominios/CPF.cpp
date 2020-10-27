@@ -48,7 +48,7 @@ void CPF::validate(string valor) throw(invalid_argument) {
 
     somaCpf = 0;
     multiplicador = 11;//Para o calculo do segundo digito, o multiplicador é 11
-    for(int i = 0; i < 12; i++){
+    for(int i = 0; i < 13; i++){
         if(str[i] != '.' && str[i] != '-'){//Aqui entra a parte de conferir tambem se eh um traco
             somaCpf += (str[i] - '0')*(multiplicador);
             --multiplicador;

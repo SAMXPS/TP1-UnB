@@ -9,7 +9,7 @@ Numero::Numero(string valor) {
 }
 
 void Numero::validate(string valor) throw(invalid_argument){
-	if(valor.size() != tamanho){//o tamanho do numero nao e o tamanhao padrao pedido no trabalho
+	if(valor.length() != tamanho){//o tamanho do numero nao e o tamanhao padrao pedido no trabalho
         throw invalid_argument("O numero nao tem o tamanho padrao");
 	}
 
@@ -18,6 +18,13 @@ void Numero::validate(string valor) throw(invalid_argument){
 	if(str[6] != '-'){//o formato do numero esta errado de acordo com o trabalho
         throw invalid_argument("O numero nao esta no formato correto");
 	}
+
+    for(int i = 0; i < tamanho; i++){
+        if(!isdigit(str[i])){
+            if(i == 6 && str[6] == '-') continue;
+            throw invalid_argument("O numero nao esta no formato correto");
+        }
+    }
 
     int digito = 0;
     int somador = 0;
@@ -28,16 +35,10 @@ void Numero::validate(string valor) throw(invalid_argument){
         multiplicador--;
     }
 
-    digito = somador % 11;
+    digito = (10*somador) % 11;
 
-    if(digito == 10 && str[7] != 'x'){
-        throw invalid_argument("O digito nao esta correto");
-    }
-    if(digito == 1 && (str[7] - '0') != 0){
-        throw invalid_argument("O digito nao esta correto");
-    }
     if(digito != (str[7] - '0')){
-        throw invalid_argument("O digito nao esta correto");
+        throw invalid_argument("O digito verificador esta incorreto");
     }
 }
 
