@@ -15,9 +15,11 @@ class Conta {
         Numero              numero;
 
     public:
-        Conta(CodigoDeBanco banco, CodigoDeAgencia agencia, Numero numero) : banco(banco), agencia(agencia), numero(numero) { }
+        Conta(CodigoDeBanco banco, CodigoDeAgencia agencia, Numero numero) : 
+            banco(banco), agencia(agencia), numero(numero) { }
         
-        Conta(std::string banco, std::string agencia, std::string numero) : Conta(CodigoDeBanco(banco), CodigoDeAgencia(agencia), Numero(numero)){ }
+        Conta(std::string banco, std::string agencia, std::string numero) : 
+            Conta(CodigoDeBanco(banco), CodigoDeAgencia(agencia), Numero(numero)){ }
 
         CodigoDeBanco getBanco() {
             return this->banco;

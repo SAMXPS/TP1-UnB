@@ -15,7 +15,7 @@ class Senha {
 		static const int tamanho = 6;
 
 		/**
-		 * A função validate irá verificar se a senha está de acordo com o tamanho padrão, e se ela contem números repitidos.
+		 * A função validate irá verificar se a senha está de acordo com o tamanho padrão, e se ela contem números repetidos.
          * Caso ela falhe em algum desses casos, é lançada a execeção.
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);

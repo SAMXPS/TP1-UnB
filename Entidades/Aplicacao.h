@@ -15,9 +15,11 @@ class Aplicacao {
         Data                data;
 
     public:
-        Aplicacao(CodigoDeAplicacao codigo, ValorDeAplicacao valor, Data data) : codigo(codigo), valor(valor), data(data) { }
+        Aplicacao(CodigoDeAplicacao codigo, ValorDeAplicacao valor, Data data) : 
+            codigo(codigo), valor(valor), data(data) { }
         
-        Aplicacao(std::string codigo, double valor, std::string data) : Aplicacao(CodigoDeAplicacao(codigo), ValorDeAplicacao(valor), Data(data)){ }
+        Aplicacao(std::string codigo, double valor, std::string data) : 
+            Aplicacao(CodigoDeAplicacao(codigo), ValorDeAplicacao(valor), Data(data)) { }
 
         CodigoDeAplicacao getCodigo() {
             return this->codigo;

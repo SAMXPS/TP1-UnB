@@ -27,9 +27,11 @@ class Produto {
         ValorMinimo             valor;          
 
     public:
-        Produto(CodigoDeProduto codigo, Classe classe, Emissor emissor, Prazo prazo, Data vencimento, Taxa taxa, Horario horario, ValorMinimo valor) : codigo(codigo), classe(classe), emissor(emissor), prazo(prazo), vencimento(vencimento), taxa(taxa), horario(horario), valor(valor) { }
+        Produto(CodigoDeProduto codigo, Classe classe, Emissor emissor, Prazo prazo, Data vencimento, Taxa taxa, Horario horario, ValorMinimo valor) : 
+            codigo(codigo), classe(classe), emissor(emissor), prazo(prazo), vencimento(vencimento), taxa(taxa), horario(horario), valor(valor) { }
         
-        Produto(std::string codigo, std::string classe, std::string emissor, int prazo, std::string vencimento, double taxa, std::string horario, int valor) : Produto(CodigoDeProduto(codigo), Classe(classe), Emissor(emissor), Prazo(prazo), Data(vencimento), Taxa(taxa), Horario(horario), ValorMinimo(valor)){ }
+        Produto(std::string codigo, std::string classe, std::string emissor, int prazo, std::string vencimento, double taxa, std::string horario, int valor) : 
+            Produto(CodigoDeProduto(codigo), Classe(classe), Emissor(emissor), Prazo(prazo), Data(vencimento), Taxa(taxa), Horario(horario), ValorMinimo(valor)){ }
 
         CodigoDeProduto getCodigo() {
             return this->codigo;
