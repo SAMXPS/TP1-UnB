@@ -123,18 +123,24 @@ class Produto {
         */
 
         void setCodigo(CodigoDeProduto codigo);
+    
+        void setCodigo(std::string codigo);
 
-         /**
+        /**
          * Esse é o método que define a instância classe
         */
 
         void setClasse(Classe classe);
 
-         /**
+        void setClasse(std::string classe);
+
+        /**
          * Esse é o método que define a instância emissor
         */
 
         void setEmissor(Emissor emissor);
+
+        void setEmissor(std::string emissor);
         
          /**
          * Esse é o método que define a instância prazo
@@ -142,29 +148,39 @@ class Produto {
 
         void setPrazo(Prazo prazo);
 
-         /**
-         * Esse é o método que define a instância vencimento
-        */
+        void setPrazo(int prazo);
         
+        /**
+         * Esse é o método que define a instância vencimento
+        */    
+
         void setVencimento(Data vencimento);
 
-         /**
+        void setVencimento(std::string vencimento);
+
+        /**
          * Esse é o método que define a instância taxa
         */
         
         void setTaxa(Taxa taxa);
 
-         /**
+        void setTaxa(double taxa);
+
+        /**
          * Esse é o método que define a instância horario
         */
-        
+
         void setHorario(Horario horario);
 
-         /**
+        void setHorario(std::string horario);
+
+        /**
          * Esse é o método que define a instância valor
         */
         
         void setValorMinimo(ValorMinimo valor);
+
+        void setValorMinimo(int valor);
 };
 
 #endif // PRODUTO_H_INCLUDED

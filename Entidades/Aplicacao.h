@@ -60,17 +60,21 @@ class Aplicacao {
          * Esse é o método que define a instância código
         */ 
 
+        void setCodigo(std::string codigo);
+
         void setCodigo(CodigoDeAplicacao codigo);
 
         /**
          * Esse é o método que define a instância valor
         */ 
 
-        void setValor(ValorDeAplicacao valor);
+        void setValor(double valor);
 
+        void setValor(ValorDeAplicacao valor);
         /**
          * Esse é o método que define a instância data
-        */ 
+        */
+        void setData(std::string data);
 
         void setData(Data data);
 };

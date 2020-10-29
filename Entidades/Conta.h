@@ -65,17 +65,23 @@ class Conta {
 
         void setBanco(CodigoDeBanco banco);
 
+        void setBanco(std::string banco);
+
         /**
          * Esse é o método que define a instância agencia
         */
 
         void setAgencia(CodigoDeAgencia agencia);
 
+        void setAgencia(std::string agencia);
+
         /**
          * Esse é o método que define a instância numero
         */
 
         void setNumero(Numero numero);
+
+        void setNumero(std::string numero);
 };
 
 #endif // CONTA_H_INCLUDED

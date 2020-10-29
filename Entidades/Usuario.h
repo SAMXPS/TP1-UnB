@@ -86,11 +86,15 @@ class Usuario {
 
         void setNome(Nome nome);
 
+        void setNome(std::string nome);
+
         /**
          * Esse é o método que define a instância endereço
         */
 
         void setEndereco(Endereco endereco);
+
+        void setEndereco(std::string endereco);
 
         /**
          * Esse é o método que define a instância cep
@@ -98,17 +102,23 @@ class Usuario {
 
         void setCEP(CEP cep);
 
+        void setCEP(long cep);
+
         /**
          * Esse é o método que define a instância cpf
         */
 
         void setCPF(CPF cpf);
 
+        void setCPF(std::string cpf);
+
         /**
          * Esse é o método que define a instância senha
         */
-
+       
         void setSenha(Senha senha);
+        
+        void setSenha(std::string senha);
 
 };
 
