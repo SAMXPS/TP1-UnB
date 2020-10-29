@@ -1,6 +1,7 @@
 #ifndef TU_H_INCLUDED
 #define TU_H_INCLUDED
 
+#include <string>
 #include <iostream>
 #include "ResultadoTU.h" 
 
@@ -22,12 +23,16 @@ class TU {
             ResultadoTU resultado;
 
             if (verbose) {
-                std::cout << "Realizando teste da classe " << typeid(T).name() << "." << std::endl;
+                std::string className = typeid(T).name();
+                std::cout << "Realizando teste da classe " << className.substr(1, className.length()) << "." << std::endl;
             }
 
             resultado.criacaoDeObjeto = this->testarCriacaoObjeto();
-            resultado.cenarioFalha = this->testarCenarioFalha();
-            resultado.cenarioSucesso = this->testarCenarioSucesso();
+
+            if (resultado.criacaoDeObjeto) {
+                resultado.cenarioSucesso = this->testarCenarioSucesso();
+                resultado.cenarioFalha = this->testarCenarioFalha();
+            }
 
             this->terminar();
             resultado.mostrar();
