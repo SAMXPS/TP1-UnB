@@ -1,5 +1,7 @@
 #include "Produto.h"
 
+// Implementação por Lucas Aquino
+
 void Produto::setCodigo(CodigoDeProduto codigo){
     this->codigo = codigo;
 }

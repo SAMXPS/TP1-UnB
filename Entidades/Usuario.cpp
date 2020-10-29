@@ -1,5 +1,7 @@
 #include "Usuario.h"
 
+// Implementação por Samuel James
+
 void Usuario::setNome(Nome nome) {
     this->nome = nome;
 }

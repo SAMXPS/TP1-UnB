@@ -7,6 +7,15 @@
 
 #include <string>
 
+/**
+ * A entidade Conta é responsável pela organização, acesso e definição dos seguintes domínios:
+ * CodigoDeBanco
+ * CosdigoDeAgencia
+ * Numero
+ * Para que dessa forma seja possível ter acesso ao capital do usuário, 
+ * e assim fazer uma aplicação em um produto de investimento
+*/
+
 class Conta {
 
     private:
@@ -15,27 +24,56 @@ class Conta {
         Numero              numero;
 
     public:
+
+         /**
+         * Esse é o método construtor da entidade Conta
+        */ 
+
         Conta(CodigoDeBanco banco, CodigoDeAgencia agencia, Numero numero) : 
             banco(banco), agencia(agencia), numero(numero) { }
         
         Conta(std::string banco, std::string agencia, std::string numero) : 
             Conta(CodigoDeBanco(banco), CodigoDeAgencia(agencia), Numero(numero)){ }
 
+        /**
+         * Esse é o método que prove acesso a instâcia banco
+        */ 
+
         CodigoDeBanco getBanco() {
             return this->banco;
         }
+
+        /**
+         * Esse é o método que prove acesso a instâcia agencia
+        */ 
 
         CodigoDeAgencia getAgencia() {
             return this->agencia;
         }
 
+        /**
+         * Esse é o método que prove acesso a instâcia número
+        */ 
+
         Numero getNumero() {
             return this->numero;
         }
 
+        /**
+         * Esse é o método que define a instância banco
+        */    
+
         void setBanco(CodigoDeBanco banco);
 
+        /**
+         * Esse é o método que define a instância agencia
+        */
+
         void setAgencia(CodigoDeAgencia agencia);
+
+        /**
+         * Esse é o método que define a instância numero
+        */
 
         void setNumero(Numero numero);
 };

@@ -1,5 +1,7 @@
 #include "Conta.h"
 
+// Implementação por Lucas Aquino
+
 void Conta::setBanco(CodigoDeBanco banco){
     this->banco = banco;
 }

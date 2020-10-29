@@ -1,5 +1,7 @@
 #include "Aplicacao.h"
 
+// Implementação por Samuel James
+
 void Aplicacao::setCodigo(CodigoDeAplicacao codigo) {
     this->codigo = codigo;
 }
