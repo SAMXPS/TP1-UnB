@@ -35,9 +35,15 @@ class Conta {
 
         void setBanco(CodigoDeBanco banco);
 
+        void setBanco(std::string banco);
+
         void setAgencia(CodigoDeAgencia agencia);
 
+        void setAgencia(std::string agencia);
+
         void setNumero(Numero numero);
+
+        void setNumero(std::string numero);
 };
 
 #endif // CONTA_H_INCLUDED
