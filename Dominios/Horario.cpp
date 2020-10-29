@@ -27,7 +27,7 @@ void Horario::validate(string valor) throw(invalid_argument) {
 	if((str[1] - '0') > maximo){
         throw invalid_argument("O horario esta acima das 17:00");
 	}
-	if((str[1] - '0') == maximo && ((str[3]) - '0') != 0 || (str[4] - '0') != 0){
+	if((str[1] - '0') == maximo && (((str[3]) - '0') != 0 || (str[4] - '0') != 0)){
         throw invalid_argument("O horario esta acima das 17:00");
 	}
 }
