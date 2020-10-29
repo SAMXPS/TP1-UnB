@@ -33,9 +33,15 @@ class Aplicacao {
             return this->data;
         }
 
+        void setCodigo(std::string codigo);
+
         void setCodigo(CodigoDeAplicacao codigo);
 
+        void setValor(double valor);
+
         void setValor(ValorDeAplicacao valor);
+
+        void setData(std::string data);
 
         void setData(Data data);
 };

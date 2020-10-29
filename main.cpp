@@ -1,4 +1,10 @@
-int main() {
+#include "Tests/TUAplicacao.h"
 
-    return 1;
+// Mostrar ou não as mensagens de teste.
+const bool VERBOSE = true;
+
+int main() {
+    TUAplicacao().testar(VERBOSE);
+
+    return 0;
 }
