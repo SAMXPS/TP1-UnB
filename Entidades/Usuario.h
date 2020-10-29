@@ -47,13 +47,23 @@ class Usuario {
 
         void setNome(Nome nome);
 
+        void setNome(std::string nome);
+
         void setEndereco(Endereco endereco);
+
+        void setEndereco(std::string endereco);
 
         void setCEP(CEP cep);
 
+        void setCEP(long cep);
+
         void setCPF(CPF cpf);
 
+        void setCPF(std::string cpf);
+
         void setSenha(Senha senha);
+        
+        void setSenha(std::string senha);
 
 };
 
