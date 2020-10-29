@@ -45,26 +45,21 @@ class Produto {
             return this->emissor;
         }
 
-
         Prazo getPrazo() {
             return this->prazo;
         }
-
 
         Data getVecimento() {
             return this->vencimento;
         }
 
-
         Taxa getTaxa() {
             return this->taxa;
         }
-        
 
         Horario getHorario() {
             return this->horario;
         }
-
 
         ValorMinimo getValorMinimo() {
             return this->valor;
@@ -72,19 +67,35 @@ class Produto {
 
         void setCodigo(CodigoDeProduto codigo);
 
+        void setCodigo(std::string codigo);
+
         void setClasse(Classe classe);
 
+        void setClasse(std::string classe);
+
         void setEmissor(Emissor emissor);
+
+        void setEmissor(std::string emissor);
         
         void setPrazo(Prazo prazo);
+
+        void setPrazo(int prazo);
         
         void setVencimento(Data vencimento);
+
+        void setVencimento(std::string vencimento);
         
         void setTaxa(Taxa taxa);
-        
+
+        void setTaxa(double taxa);
+
         void setHorario(Horario horario);
+
+        void setHorario(std::string horario);
         
         void setValorMinimo(ValorMinimo valor);
+
+        void setValorMinimo(int valor);
 };
 
 #endif // PRODUTO_H_INCLUDED
