@@ -1,19 +1,24 @@
 #include "TUUsuario.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
 const std::string NOME_DEFAULT = "Roberto";
 const std::string ENDERECO_DEFAULT = "Brasilia";
-const long CEP_DEFAULT = 73330036;
+const long CEP_DEFAULT = 70330036L;
 const std::string CPF_DEFAULT = "111.444.777-35";
-const std::string SENHA_DEFAULT = "1234";
+const std::string SENHA_DEFAULT = "123456";
 
-const long CEP_VALIDO = 70764510;
-const std::string SENHA_INVALIDA = "0990";
+const long CEP_VALIDO = 70764510L;
+const std::string SENHA_INVALIDA = "099066";
 
 bool TUUsuario::testarCriacaoObjeto() {
     try {
         this->instancia = new Usuario(NOME_DEFAULT, ENDERECO_DEFAULT, CEP_DEFAULT, CPF_DEFAULT, SENHA_DEFAULT);
         return ResultadoTU::PASSOU;
+    } catch (const std::invalid_argument& re) {
+        std::cerr << "Error: " << re.what() << std::endl;
+        return ResultadoTU::FALHOU;
     } catch (...) {
         return ResultadoTU::FALHOU;
     }
