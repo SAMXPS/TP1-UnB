@@ -1,14 +1,14 @@
 #include "TUUsuario.h"
 using namespace std;
 
-const std::string NOME_DEFAULT;
-const std::string ENDERECO_DEFAULT;
-const long CEP_DEFAULT;
-const std::string CPF_DEFAULT;
-const std::string SENHA_DEFAULT;
+const std::string NOME_DEFAULT = "Roberto";
+const std::string ENDERECO_DEFAULT = "Brasilia";
+const long CEP_DEFAULT = 73330036;
+const std::string CPF_DEFAULT = "111.444.777-35";
+const std::string SENHA_DEFAULT = "1234";
 
-const long CEP_VALIDO;
-const std::string SENHA_INVALIDA;
+const long CEP_VALIDO = 70764510;
+const std::string SENHA_INVALIDA = "0990";
 
 bool TUUsuario::testarCriacaoObjeto() {
     try {
