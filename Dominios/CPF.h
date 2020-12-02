@@ -52,7 +52,7 @@ class CPF {
 		 * Método getter:
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
-		const std::string getValor();
+		const std::string getValor() const;
 };
 
 /**
