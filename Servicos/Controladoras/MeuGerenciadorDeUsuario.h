@@ -8,13 +8,9 @@ class MeuGerenciadorDeUsuario : public IGerenciadorDeUsuario {
         static MeuGerenciadorDeUsuario* instance;
         Usuario* carregarUsuario(const std::string&cpf);
         MeuGerenciadorDeUsuario(){};
-    public:
-        static MeuGerenciadorDeUsuario* getInstance() {
-            if (instance == nullptr)
-                instance = new MeuGerenciadorDeUsuario();
-            return instance;
-        }
 
+    public:
+        static MeuGerenciadorDeUsuario* getInstance();
         Usuario* verificarSenha(const std::string&cpf, const std::string&senha);
         Usuario* verificarSenha(const CPF&cpf, const std::string&senha);
         bool     cadastrarUsuario(const Usuario&usuario);

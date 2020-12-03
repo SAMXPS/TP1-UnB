@@ -2,6 +2,12 @@
 
 MeuGerenciadorDeUsuario* MeuGerenciadorDeUsuario::instance = 0;
 
+MeuGerenciadorDeUsuario* MeuGerenciadorDeUsuario::getInstance() {
+    if (instance == nullptr)
+        instance = new MeuGerenciadorDeUsuario();
+    return instance;
+}
+
 Usuario* MeuGerenciadorDeUsuario::carregarUsuario(const std::string&cpf) {
     ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar("SELECT * FROM USUARIOS WHERE CPF = '" + cpf + "'");
     Usuario* usuario = NULL;

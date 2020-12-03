@@ -39,7 +39,7 @@ class Conta {
          * Esse é o método que prove acesso a instâcia banco
         */ 
 
-        CodigoDeBanco getBanco() {
+        CodigoDeBanco getBanco() const {
             return this->banco;
         }
 
@@ -47,7 +47,7 @@ class Conta {
          * Esse é o método que prove acesso a instâcia agencia
         */ 
 
-        CodigoDeAgencia getAgencia() {
+        CodigoDeAgencia getAgencia() const {
             return this->agencia;
         }
 
@@ -55,7 +55,7 @@ class Conta {
          * Esse é o método que prove acesso a instâcia número
         */ 
 
-        Numero getNumero() {
+        Numero getNumero() const {
             return this->numero;
         }
 

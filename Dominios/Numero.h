@@ -22,6 +22,7 @@ class Numero {
 		 * encotra-se o digito verificador e compara com o dígito recebido. Caso ele falhe em algum desses casos, é lançada a execeção
 		 */
         static void validate(std::string valor) throw(std::invalid_argument);
+		
 
     public:
 		/**
@@ -42,6 +43,16 @@ class Numero {
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
 		const std::string getValor();
+
+		/**
+		 * Método para calcular digito verificador. 
+		 */
+		static int calculaDigitoVerificador(std::string valor) throw(std::invalid_argument);
+
+		static std::string criaValor(std::string sem_digito_verificador) throw(std::invalid_argument) {
+			return sem_digito_verificador + "-" + std::to_string(calculaDigitoVerificador(sem_digito_verificador));
+		}
+
 };
 
 /**
