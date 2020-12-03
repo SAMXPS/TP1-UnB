@@ -1,0 +1,6 @@
+#ifndef PAGINA_LOGIN_H_INCLUDED
+#define PAGINA_LOGIN_H_INCLUDED
+
+int mostrar();
+
+#endif//PAGINA_LOGIN_H_INCLUDED

@@ -32,6 +32,14 @@
 			<Add option="-lpthread" />
 			<Add option="-ldl" />
 		</Compiler>
+		<Linker>
+			<Add library="pdcurses" />
+		</Linker>
+		<Unit filename="Apresentacao/GerenciadorDePagina.cpp" />
+		<Unit filename="Apresentacao/GerenciadorDePagina.h" />
+		<Unit filename="Apresentacao/Paginas/Pagina.h" />
+		<Unit filename="Apresentacao/Paginas/PaginaLogin.cpp" />
+		<Unit filename="Apresentacao/Paginas/PaginaLogin.h" />
 		<Unit filename="Dominios/CEP.cpp" />
 		<Unit filename="Dominios/CEP.h" />
 		<Unit filename="Dominios/CPF.cpp" />
@@ -96,6 +104,7 @@
 		<Unit filename="Servicos/Interfaces/IGerenciadorDeConta.h" />
 		<Unit filename="Servicos/Interfaces/IGerenciadorDeProduto.h" />
 		<Unit filename="Servicos/Interfaces/IGerenciadorDeUsuario.h" />
+		<Unit filename="Servicos/Interfaces/IServicos.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<DoxyBlocks>
