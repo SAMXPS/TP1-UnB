@@ -1,5 +1,8 @@
 #include "GerenciadorBancoSQL.h"
 
+ResultadoSQL* GerenciadorBancoSQL::resultado = nullptr;
+GerenciadorBancoSQL* GerenciadorBancoSQL::instance = nullptr;
+
 void GerenciadorBancoSQL::conectar() {
     if (sqlite3_open(nomeBancoDados, &database) != SQLITE_OK)
         throw ErroSQL("Erro ao conectar no banco de dados.");

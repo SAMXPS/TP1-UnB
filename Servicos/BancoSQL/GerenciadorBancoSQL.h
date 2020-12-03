@@ -6,6 +6,25 @@
 #include <map>
 #include <string>
 
+class ResultadoSQL {
+    public:
+        bool sucesso = false;
+        std::string mensagemErro = NULL;
+        std::map<std::string, std::string> resposta;
+};
+
+class ErroSQL {
+    private:
+        std::string mensagem;
+    public:
+        ErroSQL(std::string erro) {
+            this->mensagem = erro;
+        }
+        std::string what() {
+            return mensagem;
+        }
+};
+
 class GerenciadorBancoSQL {
     private:
         static GerenciadorBancoSQL* instance;
@@ -27,23 +46,9 @@ class GerenciadorBancoSQL {
                 instance = new GerenciadorBancoSQL();
             return instance;
         }
-        
+
         ResultadoSQL* executar(std::string query);
 };
 
-class ResultadoSQL {
-    public:
-        bool sucesso = false;
-        std::string mensagemErro = NULL;
-        std::map<std::string, std::string> resposta;
-};
-
-class ErroSQL {
-    private:
-        std::string mensagem;
-    public:
-        ErroSQL(std::string);
-        std::string what();
-};
 
 #endif//GERENCIADORBANCOSQL_H_INCLUDED
