@@ -10,7 +10,7 @@ int main() {
     );
 
     GerenciadorDePagina* apresentacao = new GerenciadorDePagina(servicos);
-    apresentacao->abrir();
+    apresentacao->executar();
 
     return 0;
 }
