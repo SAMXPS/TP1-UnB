@@ -23,19 +23,19 @@ class IServicos {
                     gerenciadorDeProduto(gerenciadorDeProduto), 
                     gerenciadorDeUsuario(gerenciadorDeUsuario) {}
 
-        IGerenciadorDeConta* getGerenciadorDeConta() {
+        IGerenciadorDeConta* getGerenciadorDeConta() const {
             return this->gerenciadorDeConta;
         }
 
-        IGerenciadorDeProduto* getGerenciadorDeProduto() {
+        IGerenciadorDeProduto* getGerenciadorDeProduto() const {
             return this->gerenciadorDeProduto;
         }
 
-        IGerenciadorDeAplicacao* getGerenciadorDeAplicacao() {
+        IGerenciadorDeAplicacao* getGerenciadorDeAplicacao() const {
             return this->gerenciadorDeAplicacao;
         }
 
-        IGerenciadorDeUsuario* getGerenciadorDeUsuario() {
+        IGerenciadorDeUsuario* getGerenciadorDeUsuario() const {
             return this->gerenciadorDeUsuario;
         }
 };

@@ -1,24 +1,49 @@
-#include "PaginaLogin.h"
+#include "../Paginas.h"
 #include <string.h>
-#include <curses.h>
-
-// Exemplo de uso de funções da biblioteca PDCurses.
 
 Pagina* PaginaLogin::mostrar(GerenciadorDePagina* apresentador) {
-    std::string dado1;
-    std::string dado2;
+    char opcao;
+    std::string cpf, senha;
 
-    apresentador->escreveNoCentro("Bem vido ao Sistema de Investimentos");
+    apresentador->escreveNoCentro("Fazer Login");
     apresentador->escreveNoCentro("");
-    apresentador->escreveNoCentro("Escolha a opcao desejada");
-    apresentador->escreveNoCentro("");
-    apresentador->escreveNoCentro("Login[L], Cadastro[C]: ");
-    dado1 = apresentador->lerInput();
+    apresentador->escreveNoCentro("CPF: ");
+    cpf = apresentador->lerInput();
+
+    try {
+        CPF teste(cpf);
+    } catch(...) {
+        apresentador->limparTela();
+        apresentador->escreveNoCentro("CPF invalido.");
+        apresentador->escreveNoCentro("Tentar novamente? [S/N]: ");
+        std::string opcao = apresentador->lerInput();
+        if (opcao == "S")
+            return this;
+        else
+            return new PaginaInicial();
+    }
+
     apresentador->escreveNoCentro("Senha: ");
-    dado2 = apresentador->lerInput();
-    apresentador->limparTela();
-    apresentador->escreveNoCentro("Digitado CPF: " + dado1);
-    apresentador->escreveNoCentro("Digitada senha: " + dado2);
-    return NULL;
+    senha = apresentador->lerInput();
+
+    Usuario* usuario = apresentador->getServicos()->getGerenciadorDeUsuario()->verificarSenha(cpf, senha);
+
+    if (usuario == NULL) {
+        apresentador->limparTela();
+        apresentador->escreveNoCentro("Usuário ou Senha incorretos.");
+        apresentador->escreveNoCentro("Tentar novamente? [S/N]: ");
+        std::string opcao = apresentador->lerInput();
+        if (opcao == "S")
+            return this;
+        else
+            return new PaginaInicial();
+    } else {
+        apresentador->limparTela();
+        apresentador->escreveNoCentro("Login bem sucedido!");
+        apresentador->escreveNoCentro("Aperte qualquer tecla para continuar...");
+        apresentador->lerInput();
+        return new PaginaInicialLogado(*usuario);
+    }
 }
+
 

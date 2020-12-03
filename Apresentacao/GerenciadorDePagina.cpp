@@ -1,11 +1,10 @@
 #include "GerenciadorDePagina.h"
-#include "Paginas/PaginaLogin.h"
 #include <curses.h>
 #include <iostream>
 
 void GerenciadorDePagina::executar() {
     initscr();
-    Pagina* pagina = new PaginaLogin();
+    Pagina* pagina = new PaginaInicial();
 
     while (pagina != NULL) {
         limparTela();
@@ -13,16 +12,12 @@ void GerenciadorDePagina::executar() {
         pagina = pagina->mostrar(this);
     }
 
-    noecho();
-    getch();
-    echo();
-
     fechar();
 }
 
 void GerenciadorDePagina::escreveNoCentro(std::string mensagem) {
     const char*campo1 = mensagem.c_str();
-    mvprintw(linhas/2 + currentLine,(colunas-mensagem.size())/2,"%s",campo1);
+    mvprintw(linhas/2 + currentLine - 5,(colunas-mensagem.size())/2,"%s",campo1);
     currentLine++;
 }
 

@@ -2,8 +2,7 @@
 #define GERENCIADOR_DE_PAGINA_H_INCLUDED
 
 #include "../Servicos/Interfaces/IServicos.h"
-#include "Paginas/Pagina.h"
-
+#include "Paginas.h"
 
 class GerenciadorDePagina {
     private:
