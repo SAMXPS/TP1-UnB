@@ -1,8 +1,10 @@
 
 .vscode/settings.json
+.vscode/*
 obj/*
 *.depend
 bin/
 tools/out/*
 trabalho2.layout
 old_tools/*
+trabalho3.layout
