@@ -10,7 +10,7 @@ class ResultadoSQL {
     public:
         bool sucesso = false;
         std::string mensagemErro;
-        std::map<std::string, std::string> resposta;
+        std::list<std::map<std::string, std::string>> resposta;
 };
 
 class ErroSQL {
@@ -31,7 +31,6 @@ class GerenciadorBancoSQL {
         const char *nomeBancoDados;
         sqlite3 *database;
         static int callback(void *, int, char **, char **);
-        static ResultadoSQL* resultado;
 
         void conectar();
         void desconectar();
@@ -41,11 +40,7 @@ class GerenciadorBancoSQL {
         }
     public:
         // Implementação de Singleton
-        static GerenciadorBancoSQL* getInstance() {
-            if (instance == NULL)
-                instance = new GerenciadorBancoSQL();
-            return instance;
-        }
+        static GerenciadorBancoSQL* getInstance();
 
         ResultadoSQL* executar(std::string query);
 };

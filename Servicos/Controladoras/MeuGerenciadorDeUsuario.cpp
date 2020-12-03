@@ -12,12 +12,15 @@ Usuario* MeuGerenciadorDeUsuario::carregarUsuario(const std::string&cpf) {
     ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar("SELECT * FROM USUARIOS WHERE CPF = '" + cpf + "'");
     Usuario* usuario = NULL;
     
-    if (resultado != NULL && resultado->sucesso) {
-        std::string nome = resultado->resposta["NOME"];
-        std::string endereco = resultado->resposta["ENDERECO"];
-        long cep = std::stol(resultado->resposta["CEP"]);
-        std::string cpf = resultado->resposta["CPF"];
-        std::string senha = resultado->resposta["SENHA"];
+    if (resultado != NULL && resultado->sucesso && resultado->resposta.size() > 0) {
+        std::map<std::string, std::string> resposta = resultado->resposta.front();
+
+        std::string nome = resposta["NOME"];
+        std::string endereco = resposta["ENDERECO"];
+        long cep = std::stol(resposta["CEP"]);
+        std::string cpf = resposta["CPF"];
+        std::string senha = resposta["SENHA"];
+        
         usuario = new Usuario(nome, endereco, cep, cpf, senha);
     }
 

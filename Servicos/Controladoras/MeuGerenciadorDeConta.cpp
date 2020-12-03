@@ -15,10 +15,13 @@ Conta* MeuGerenciadorDeConta::carregarConta(const Usuario&usuario) {
     ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar("SELECT * FROM CONTAS WHERE CPF = '" + cpf + "'");
     Conta* conta = NULL;
     
-    if (resultado != NULL && resultado->sucesso) {
-        std::string banco = resultado->resposta["CODIGO_DE_BANCO"];
-        std::string agencia = resultado->resposta["CODIGO_DE_AGENCIA"];
-        std::string numero = resultado->resposta["NUMERO"];
+    if (resultado != NULL && resultado->sucesso && resultado->resposta.size() > 0) {
+        std::map<std::string, std::string> resposta = resultado->resposta.front();
+
+        std::string banco = resposta["CODIGO_DE_BANCO"];
+        std::string agencia = resposta["CODIGO_DE_AGENCIA"];
+        std::string numero = resposta["NUMERO"];
+        
         conta = new Conta(banco, agencia, numero);
     }
 
