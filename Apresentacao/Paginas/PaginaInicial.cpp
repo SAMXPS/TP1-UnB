@@ -24,7 +24,7 @@ Pagina* PaginaInicial::mostrar(GerenciadorDePagina* apresentador) {
             case '2':
                 return new PaginaLogin();
             case '3':
-                break;
+                return new FazerCadastro();
             case '0':
                 return NULL;
             

@@ -23,7 +23,9 @@ Pagina* PaginaInicialLogado::mostrar(GerenciadorDePagina* apresentador) {
 
         switch (opcao){
             case '1':
-                return NULL;
+                return new ApresentarDadosCadastro(usuario);
+            case '2':
+                return new ApresentarDadosContaCorrente(usuario);
             case '0':
                 return new PaginaInicial();
             

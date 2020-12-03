@@ -29,6 +29,20 @@ class VerProdutos : public Pagina {
         Pagina* mostrar(GerenciadorDePagina* apresentador);
 };
 
+class FazerCadastro : public Pagina {
+    public:
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
+
+class PaginaErro : public Pagina {
+    private:
+        Pagina* proximo;
+        std::string erro;
+    public:
+        PaginaErro(Pagina* proximo, std::string erro) : proximo(proximo), erro(erro) {};
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
+
 // --------- Definição de Páginas protegidas por Login -------- //
 
 class PaginaInicialLogado : public Pagina {
@@ -37,5 +51,20 @@ class PaginaInicialLogado : public Pagina {
         PaginaInicialLogado(Usuario usuario) : usuario(usuario) {}
         Pagina* mostrar(GerenciadorDePagina* apresentador);
 };
+
+class ApresentarDadosCadastro : public Pagina {
+    public:
+        Usuario usuario;
+        ApresentarDadosCadastro(Usuario usuario) : usuario(usuario) {}
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
+
+class ApresentarDadosContaCorrente : public Pagina {
+    public:
+        Usuario usuario;
+        ApresentarDadosContaCorrente(Usuario usuario) : usuario(usuario) {}
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
+
 
 #endif//PAGINA_H_INCLUDED

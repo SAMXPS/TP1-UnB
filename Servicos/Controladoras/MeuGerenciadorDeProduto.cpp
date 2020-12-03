@@ -34,5 +34,8 @@ bool MeuGerenciadorDeProduto::cadastrarProduto(const Produto&produto) {
 }
 
 bool MeuGerenciadorDeProduto::descadastrar(const CodigoDeProduto&codigo) {
-    return false;
+    std::string query = "DELETE FROM PRODUTOS WHERE CODIGO_DE_PRODUTO = ";
+    query += "'" + codigo.getValor() + "'"; 
+    ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar(query);
+    return (resultado != NULL && resultado->sucesso);
 }

@@ -37,13 +37,13 @@ class CodigoDeProduto {
 		 * Método getter: 
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
-		const std::string getValor();
+		std::string getValor() const;
 };
 
 /**
  * Implementação de método getter inline
  */
-inline const std::string CodigoDeProduto::getValor() {
+inline std::string CodigoDeProduto::getValor() const{
 	return valor;
 }
 

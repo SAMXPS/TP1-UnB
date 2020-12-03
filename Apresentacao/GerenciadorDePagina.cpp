@@ -9,7 +9,11 @@ void GerenciadorDePagina::executar() {
     while (pagina != NULL) {
         limparTela();
         carregarDimensoes();
-        pagina = pagina->mostrar(this);
+        try {
+            pagina = pagina->mostrar(this);
+        } catch (...) {
+            pagina = new PaginaErro(new PaginaInicial(), "Erro desconhecido.");
+        }
     }
 
     fechar();
