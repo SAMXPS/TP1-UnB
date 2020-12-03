@@ -3,16 +3,20 @@
 MeuGerenciadorDeUsuario* MeuGerenciadorDeUsuario::instance = 0;
 
 Usuario* MeuGerenciadorDeUsuario::carregarUsuario(const std::string&cpf) {
-    ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar("SELECT * FROM USUARIOS WHERE CPF = " + cpf);
-    if (resultado != NULL) {
+    ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar("SELECT * FROM USUARIOS WHERE CPF = '" + cpf + "'");
+    Usuario* usuario = NULL;
+    
+    if (resultado != NULL && resultado->sucesso) {
         std::string nome = resultado->resposta["NOME"];
         std::string endereco = resultado->resposta["ENDERECO"];
         long cep = std::stol(resultado->resposta["CEP"]);
         std::string cpf = resultado->resposta["CPF"];
         std::string senha = resultado->resposta["SENHA"];
-        return new Usuario(nome, endereco, cep, cpf, senha);
+        usuario = new Usuario(nome, endereco, cep, cpf, senha);
     }
-    return NULL;
+
+    delete resultado;
+    return usuario;
 }
 
 Usuario* MeuGerenciadorDeUsuario::verificarSenha(const std::string&cpf, const std::string&senha) {
@@ -30,6 +34,14 @@ Usuario* MeuGerenciadorDeUsuario::verificarSenha(const CPF&cpf, const std::strin
 }
 
 bool MeuGerenciadorDeUsuario::cadastrarUsuario(const Usuario&usuario) {
-    return false;
+    std::string query = "INSERT INTO USUARIOS(CPF, NOME, ENDERECO, CEP, SENHA) VALUES (";
+    query += "'" + usuario.getCPF().getValor() + "', ";
+    query += "'" + usuario.getNome().getValor() + "', ";
+    query += "'" + usuario.getEndereco().getValor() + "', ";
+    query += "'" + std::to_string(usuario.getCEP().getValor()) + "', ";
+    query += "'" + usuario.getSenha().getValor() + "'";
+    query += ")";
+    ResultadoSQL* resultado = GerenciadorBancoSQL::getInstance()->executar(query);
+    return (resultado != NULL && resultado->sucesso);
 }
 

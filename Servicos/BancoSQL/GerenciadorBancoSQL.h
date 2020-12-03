@@ -9,7 +9,7 @@
 class ResultadoSQL {
     public:
         bool sucesso = false;
-        std::string mensagemErro = NULL;
+        std::string mensagemErro;
         std::map<std::string, std::string> resposta;
 };
 
