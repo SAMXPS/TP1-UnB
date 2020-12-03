@@ -58,7 +58,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia código
         */ 
 
-        CodigoDeProduto getCodigo() {
+        CodigoDeProduto getCodigo() const {
             return this->codigo;
         }
 
@@ -66,7 +66,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia classe
         */ 
 
-        Classe getClasse() {
+        Classe getClasse() const {
             return this->classe;
         }
 
@@ -74,7 +74,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia emissor
         */ 
 
-        Emissor getEmissor() {
+        Emissor getEmissor() const {
             return this->emissor;
         }
 
@@ -82,7 +82,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia prazo
         */ 
 
-        Prazo getPrazo() {
+        Prazo getPrazo() const {
             return this->prazo;
         }
 
@@ -90,7 +90,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia vencimento
         */ 
 
-        Data getVecimento() {
+        Data getVecimento() const {
             return this->vencimento;
         }
 
@@ -98,7 +98,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia taxa
         */ 
 
-        Taxa getTaxa() {
+        Taxa getTaxa() const {
             return this->taxa;
         }
 
@@ -106,7 +106,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia horario
         */         
 
-        Horario getHorario() {
+        Horario getHorario() const {
             return this->horario;
         }
 
@@ -114,7 +114,7 @@ class Produto {
          * Esse é o método que prove acesso a instâcia valor
         */ 
 
-        ValorMinimo getValorMinimo() {
+        ValorMinimo getValorMinimo() const {
             return this->valor;
         }
 
