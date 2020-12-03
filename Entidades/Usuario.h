@@ -44,7 +44,7 @@ class Usuario {
          * Esse é o método que prove acesso a instâcia nome
         */ 
 
-        Nome getNome() {
+        Nome getNome() const {
             return this->nome;
         }
 
@@ -52,7 +52,7 @@ class Usuario {
          * Esse é o método que prove acesso a instâcia endereço
         */ 
 
-        Endereco getEndereco() {
+        Endereco getEndereco() const {
             return this->endereco;
         }
 
@@ -60,7 +60,7 @@ class Usuario {
          * Esse é o método que prove acesso a instâcia cep
         */ 
 
-        CEP getCEP() {
+        CEP getCEP() const {
             return this->cep;
         }
 
@@ -68,7 +68,7 @@ class Usuario {
          * Esse é o método que prove acesso a instâcia cpf
         */ 
 
-        CPF getCPF() {
+        CPF getCPF() const {
             return this->cpf;
         }
 
@@ -76,7 +76,7 @@ class Usuario {
          * Esse é o método que prove acesso a instâcia senha
         */ 
 
-        Senha getSenha() {
+        Senha getSenha() const {
             return this->senha;
         }
 

@@ -58,7 +58,7 @@ class CPF {
 /**
  * Implementação de método getter inline
  */
-inline const std::string CPF::getValor() {
+inline const std::string CPF::getValor() const {
 	return valor;
 }
 
