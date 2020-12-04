@@ -30,6 +30,9 @@ Pagina* PaginaInicialLogado::mostrar(GerenciadorDePagina* apresentador) {
                 return new CadastrarNovoProduto(usuario);
             case '4':
                 return new DescadastrarProduto(usuario);
+            case '5':
+            case '6':
+                return new PaginaErro(this, "infelizmente essa funcionalidade nao foi implementada a tempo.");
             case '0':
                 return new PaginaInicial();
             
