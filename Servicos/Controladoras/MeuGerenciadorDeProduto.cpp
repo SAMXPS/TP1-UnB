@@ -36,7 +36,7 @@ std::list<Produto> MeuGerenciadorDeProduto::listarProdutos(const Classe&classe) 
                 std::string vencimento = (*it)["DATA"];
                 double taxa = std::stod((*it)["TAXA"]);
                 std::string horario = (*it)["HORARIO"]; 
-                int valor = std::stoi((*it)["VALOR"]);
+                int valor = std::stoi((*it)["VALOR_MINIMO"]);
 
                 lista.push_back(Produto(codigo, classe, emissor, prazo, vencimento, taxa, horario, valor));
             }
