@@ -26,6 +26,10 @@ Pagina* PaginaInicialLogado::mostrar(GerenciadorDePagina* apresentador) {
                 return new ApresentarDadosCadastro(usuario);
             case '2':
                 return new ApresentarDadosContaCorrente(usuario);
+            case '3':
+                return new CadastrarNovoProduto(usuario);
+            case '4':
+                return new DescadastrarProduto(usuario);
             case '0':
                 return new PaginaInicial();
             

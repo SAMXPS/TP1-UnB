@@ -24,7 +24,7 @@ class PaginaLogin : public Pagina {
         Pagina* mostrar(GerenciadorDePagina* apresentador);
 };
 
-class VerProdutos : public Pagina {
+class ListarProdutos : public Pagina {
     public:
         Pagina* mostrar(GerenciadorDePagina* apresentador);
 };
@@ -66,5 +66,18 @@ class ApresentarDadosContaCorrente : public Pagina {
         Pagina* mostrar(GerenciadorDePagina* apresentador);
 };
 
+class CadastrarNovoProduto : public Pagina {
+    public:
+        Usuario usuario;
+        CadastrarNovoProduto(Usuario usuario) : usuario(usuario) {}
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
+
+class DescadastrarProduto : public Pagina {
+    public:
+        Usuario usuario;
+        DescadastrarProduto(Usuario usuario) : usuario(usuario) {}
+        Pagina* mostrar(GerenciadorDePagina* apresentador);
+};
 
 #endif//PAGINA_H_INCLUDED

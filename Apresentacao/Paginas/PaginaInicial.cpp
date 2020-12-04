@@ -20,7 +20,7 @@ Pagina* PaginaInicial::mostrar(GerenciadorDePagina* apresentador) {
 
         switch (opcao){
             case '1':
-                return NULL;
+                return new ListarProdutos();
             case '2':
                 return new PaginaLogin();
             case '3':

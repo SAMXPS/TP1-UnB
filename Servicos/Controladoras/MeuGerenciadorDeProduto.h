@@ -11,7 +11,7 @@ class MeuGerenciadorDeProduto: public IGerenciadorDeProduto {
     public:
         static MeuGerenciadorDeProduto* getInstance();
         std::list<Classe> listarClasses();
-        Produto* listarProduto(const Classe&classe);
+        std::list<Produto> listarProdutos(const Classe&classe);
         bool cadastrarProduto(const Produto&produto);
         bool descadastrar(const CodigoDeProduto&codigo);
 };

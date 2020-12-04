@@ -36,13 +36,13 @@ class Classe {
 		 * Método getter: 
 		 * - Retorna o valor armazenado no atributo do objeto de classe.
 		 */
-		const std::string getValor();
+		std::string getValor() const;
 };
 
 /**
  * Implementação de método getter inline
  */
-inline const std::string Classe::getValor() {
+inline std::string Classe::getValor() const {
 	return valor;
 }
 

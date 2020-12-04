@@ -10,7 +10,7 @@ class IGerenciadorDeProduto {
         virtual std::list<Classe> listarClasses() = 0;
 
         // Listar produtos dado uma classe
-        virtual Produto* listarProduto(const Classe&classe) = 0;
+        virtual std::list<Produto> listarProdutos(const Classe&classe) = 0;
 
         // Cadastrar produto
         virtual bool cadastrarProduto(const Produto&produto) = 0;
